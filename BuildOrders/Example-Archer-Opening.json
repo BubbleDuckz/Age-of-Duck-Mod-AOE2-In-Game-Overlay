@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "name": "Example Archer Opening",
+  "description": "User-supplied example. Adapt to your civilization and strategy; step 9 is intentionally omitted.",
+  "steps": [
+    {
+      "step": "1",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "2",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "3",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "4",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "5",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "6",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "7",
+      "unit": "Villager",
+      "task": "Wood"
+    },
+    {
+      "step": "8",
+      "unit": "Villager",
+      "task": "Wood"
+    },
+    {
+      "step": "10",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "11",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "12",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "13",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "14",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "15",
+      "unit": "Villager",
+      "task": "Gold"
+    },
+    {
+      "step": "16",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "17",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "18",
+      "unit": "Villager",
+      "task": "Food"
+    },
+    {
+      "step": "19",
+      "unit": "FeudalAge",
+      "task": "ClickUp"
+    },
+    {
+      "step": "19.1",
+      "unit": "Custom",
+      "text": "Assign 14 villagers to wood, 4 to food, and 1 to gold."
+    },
+    {
+      "step": "19.2",
+      "unit": "Custom",
+      "text": "When 175 wood is available, build a barracks with 1 villager."
+    },
+    {
+      "step": "20",
+      "unit": "Loom"
+    },
+    {
+      "step": "21",
+      "unit": "Villager",
+      "task": "Build",
+      "building": "Archery Range"
+    },
+    {
+      "step": "21.1",
+      "unit": "Custom",
+      "text": "Queue archers. Build a second Archery Range as soon as possible."
+    },
+    {
+      "step": "22",
+      "unit": "Villager",
+      "task": "Gold"
+    },
+    {
+      "step": "22.1",
+      "unit": "Custom",
+      "text": "Queue archers. Build a second Archery Range as soon as possible."
+    },
+    {
+      "step": "23",
+      "unit": "Villager",
+      "task": "Gold"
+    },
+    {
+      "step": "23.1",
+      "unit": "Custom",
+      "text": "Queue archers from both Archery Ranges."
+    }
+  ]
+}

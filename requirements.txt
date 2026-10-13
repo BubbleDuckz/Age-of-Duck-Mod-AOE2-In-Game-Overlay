@@ -2,3 +2,10 @@ PyQt5
 requests
 packaging
 psutil
+pyinstaller
+
+Pillow
+numpy
+opencv-python-headless
+
+websocket-client==1.9.2

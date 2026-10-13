@@ -1,0 +1,6063 @@
+{
+ "metadata": {
+  "description": "Counter classes derived from the 'Weak vs.' text of each unit description (aoe2techtree.net).",
+  "source_data_sha256": "66a439979afe62f71541cff05280837abfb04e7732e364e2eae2f318862ade6d",
+  "class_count": 26,
+  "unit_count": 236
+ },
+ "group_order": [
+  "Infantry",
+  "Archers",
+  "Cav. Archers",
+  "Cavalry",
+  "Gunpowder",
+  "Siege",
+  "Monks",
+  "Ships",
+  "Other"
+ ],
+ "line_order": [
+  "Militia",
+  "Spearman",
+  "Eagle Scout",
+  "Archer",
+  "Skirmisher",
+  "Cavalry Archer",
+  "Scout Cavalry",
+  "Knight",
+  "Camel Rider",
+  "Steppe Lancer",
+  "Battle Elephant",
+  "Battering Ram",
+  "Mangonel",
+  "Scorpion",
+  "Galley",
+  "Fire Galley",
+  "Demolition Raft",
+  "Hulk",
+  "Composite Bowman"
+ ],
+ "lines": {
+  "Militia": [
+   "Militia",
+   "Man-at-Arms",
+   "Long Swordsman",
+   "Two-Handed Swordsman",
+   "Champion"
+  ],
+  "Spearman": [
+   "Spearman",
+   "Pikeman",
+   "Halberdier"
+  ],
+  "Eagle Scout": [
+   "Eagle Scout",
+   "Eagle Warrior",
+   "Elite Eagle Warrior"
+  ],
+  "Archer": [
+   "Archer",
+   "Crossbowman",
+   "Arbalester"
+  ],
+  "Skirmisher": [
+   "Skirmisher",
+   "Elite Skirmisher",
+   "Imperial Skirmisher"
+  ],
+  "Cavalry Archer": [
+   "Cavalry Archer",
+   "Heavy Cavalry Archer"
+  ],
+  "Scout Cavalry": [
+   "Scout Cavalry",
+   "Light Cavalry",
+   "Hussar",
+   "Winged Hussar"
+  ],
+  "Knight": [
+   "Knight",
+   "Cavalier",
+   "Paladin"
+  ],
+  "Camel Rider": [
+   "Camel Rider",
+   "Heavy Camel Rider",
+   "Imperial Camel Rider"
+  ],
+  "Steppe Lancer": [
+   "Steppe Lancer",
+   "Elite Steppe Lancer"
+  ],
+  "Battle Elephant": [
+   "Battle Elephant",
+   "Elite Battle Elephant"
+  ],
+  "Battering Ram": [
+   "Battering Ram",
+   "Capped Ram",
+   "Siege Ram"
+  ],
+  "Mangonel": [
+   "Mangonel",
+   "Onager",
+   "Siege Onager"
+  ],
+  "Scorpion": [
+   "Scorpion",
+   "Heavy Scorpion"
+  ],
+  "Galley": [
+   "Galley",
+   "War Galley",
+   "Galleon"
+  ],
+  "Fire Galley": [
+   "Fire Galley",
+   "Fire Ship",
+   "Fast Fire Ship"
+  ],
+  "Demolition Raft": [
+   "Demolition Raft",
+   "Demolition Ship",
+   "Heavy Demo Ship"
+  ],
+  "Hulk": [
+   "Hulk",
+   "War Hulk",
+   "Carrack"
+  ],
+  "Composite Bowman": [
+   "Composite Bowman",
+   "E. Composite Bowman"
+  ],
+  "Siege Tower": [
+   "Siege Tower"
+  ],
+  "Fishing Ship": [
+   "Fishing Ship"
+  ],
+  "Transport Ship": [
+   "Transport Ship"
+  ],
+  "Trade Cog": [
+   "Trade Cog"
+  ],
+  "Dromon": [
+   "Dromon"
+  ],
+  "Petard": [
+   "Petard"
+  ],
+  "Trebuchet": [
+   "Trebuchet"
+  ],
+  "Monk": [
+   "Monk"
+  ],
+  "Warrior Priest": [
+   "Warrior Priest"
+  ],
+  "Villager": [
+   "Villager"
+  ],
+  "Trade Cart": [
+   "Trade Cart"
+  ],
+  "Catapult Galleon": [
+   "Catapult Galleon"
+  ],
+  "Jaguar Warrior": [
+   "Jaguar Warrior",
+   "Elite Jaguar Warrior"
+  ],
+  "Elephant Archer": [
+   "Elephant Archer",
+   "Elite Elephant Archer"
+  ],
+  "Armored Elephant": [
+   "Armored Elephant"
+  ],
+  "Siege Elephant": [
+   "Siege Elephant"
+  ],
+  "Cannon Galleon": [
+   "Cannon Galleon",
+   "Elite Cannon Galleon"
+  ],
+  "Ratha": [
+   "Ratha",
+   "Elite Ratha"
+  ],
+  "Hand Cannoneer": [
+   "Hand Cannoneer"
+  ],
+  "Genitour": [
+   "Genitour",
+   "Elite Genitour"
+  ],
+  "Bombard Cannon": [
+   "Bombard Cannon"
+  ],
+  "Camel Archer": [
+   "Camel Archer",
+   "Elite Camel Archer"
+  ],
+  "Mounted Crossbowman": [
+   "Mounted Crossbowman",
+   "H. Mounted Crossbowman"
+  ],
+  "Houfnice": [
+   "Houfnice"
+  ],
+  "Hussite Wagon": [
+   "Hussite Wagon",
+   "Elite Hussite Wagon"
+  ],
+  "Longbowman": [
+   "Longbowman",
+   "Elite Longbowman"
+  ],
+  "Konnik": [
+   "Konnik",
+   "Elite Konnik"
+  ],
+  "Flemish Militia": [
+   "Flemish Militia"
+  ],
+  "Coustillier": [
+   "Coustillier",
+   "Elite Coustillier"
+  ],
+  "Arambai": [
+   "Arambai",
+   "Elite Arambai"
+  ],
+  "Varangian Guard": [
+   "Varangian Guard",
+   "E. Varangian Guard"
+  ],
+  "Cataphract": [
+   "Cataphract",
+   "Elite Cataphract"
+  ],
+  "Woad Raider": [
+   "Woad Raider",
+   "Elite Woad Raider"
+  ],
+  "Fire Lancer": [
+   "Fire Lancer",
+   "Elite Fire Lancer"
+  ],
+  "Rocket Cart": [
+   "Rocket Cart",
+   "Heavy Rocket Cart"
+  ],
+  "Dragon Ship": [
+   "Dragon Ship"
+  ],
+  "Lou Chuan": [
+   "Lou Chuan"
+  ],
+  "Chu Ko Nu": [
+   "Chu Ko Nu",
+   "Elite Chu Ko Nu"
+  ],
+  "Kipchak": [
+   "Kipchak",
+   "Elite Kipchak"
+  ],
+  "Longship": [
+   "Longship",
+   "Elite Longship"
+  ],
+  "Jomsviking": [
+   "Jomsviking",
+   "Elite Jomsviking"
+  ],
+  "Thirisadai": [
+   "Thirisadai"
+  ],
+  "Urumi Swordsman": [
+   "Urumi Swordsman",
+   "Elite Urumi Swordsman"
+  ],
+  "Shotel Warrior": [
+   "Shotel Warrior",
+   "Elite Shotel Warrior"
+  ],
+  "Throwing Axeman": [
+   "Throwing Axeman",
+   "Elite Throwing Axeman"
+  ],
+  "Monaspa": [
+   "Monaspa",
+   "Elite Monaspa"
+  ],
+  "Huskarl": [
+   "Huskarl",
+   "Elite Huskarl"
+  ],
+  "Camel Scout": [
+   "Camel Scout"
+  ],
+  "Shrivamsha Rider": [
+   "Shrivamsha Rider",
+   "E. Shrivamsha Rider"
+  ],
+  "Chakram Thrower": [
+   "Chakram Thrower",
+   "Elite Chakram Thrower"
+  ],
+  "Ghulam": [
+   "Ghulam",
+   "Elite Ghulam"
+  ],
+  "Tarkan": [
+   "Tarkan",
+   "Elite Tarkan"
+  ],
+  "Slinger": [
+   "Slinger"
+  ],
+  "Champi Scout": [
+   "Champi Scout"
+  ],
+  "Champi Runner": [
+   "Champi Runner"
+  ],
+  "Champi Warrior": [
+   "Champi Warrior",
+   "Elite Champi Warrior"
+  ],
+  "Kamayuk": [
+   "Kamayuk",
+   "Elite Kamayuk"
+  ],
+  "Condottiero": [
+   "Condottiero"
+  ],
+  "Genoese Crossbowman": [
+   "Genoese Crossbowman",
+   "Elite Genoese Crossbowman"
+  ],
+  "Samurai": [
+   "Samurai",
+   "Elite Samurai"
+  ],
+  "Grenadier": [
+   "Grenadier"
+  ],
+  "Iron Pagoda": [
+   "Iron Pagoda",
+   "Elite Iron Pagoda"
+  ],
+  "Mounted Trebuchet": [
+   "Mounted Trebuchet"
+  ],
+  "Liao Dao": [
+   "Liao Dao",
+   "Elite Liao Dao"
+  ],
+  "Ballista Elephant": [
+   "Ballista Elephant",
+   "Elite Ballista Elephant"
+  ],
+  "Turtle Ship": [
+   "Turtle Ship",
+   "Elite Turtle Ship"
+  ],
+  "War Wagon": [
+   "War Wagon",
+   "Elite War Wagon"
+  ],
+  "Leitis": [
+   "Leitis",
+   "Elite Leitis"
+  ],
+  "Magyar Huszar": [
+   "Magyar Huszar",
+   "Elite Magyar Huszar"
+  ],
+  "Karambit Warrior": [
+   "Karambit Warrior",
+   "Elite Karambit Warrior"
+  ],
+  "Gbeto": [
+   "Gbeto",
+   "Elite Gbeto"
+  ],
+  "Bolas Rider": [
+   "Bolas Rider",
+   "Elite Bolas Rider"
+  ],
+  "Kona": [
+   "Kona",
+   "Elite Kona"
+  ],
+  "Plumed Archer": [
+   "Plumed Archer",
+   "Elite Plumed Archer"
+  ],
+  "Mangudai": [
+   "Mangudai",
+   "Elite Mangudai"
+  ],
+  "Temple Guard": [
+   "Temple Guard",
+   "Elite Temple Guard"
+  ],
+  "Guecha Warrior": [
+   "Guecha Warrior",
+   "Elite Guecha Warrior"
+  ],
+  "Savar": [
+   "Savar"
+  ],
+  "War Elephant": [
+   "War Elephant",
+   "Elite War Elephant"
+  ],
+  "Obuch": [
+   "Obuch",
+   "Elite Obuch"
+  ],
+  "Caravel": [
+   "Caravel",
+   "Elite Caravel"
+  ],
+  "Organ Gun": [
+   "Organ Gun",
+   "Elite Organ Gun"
+  ],
+  "Legionary": [
+   "Legionary"
+  ],
+  "Centurion": [
+   "Centurion",
+   "Elite Centurion"
+  ],
+  "Mameluke": [
+   "Mameluke",
+   "Elite Mameluke"
+  ],
+  "Hearth Troop": [
+   "Hearth Troop",
+   "Elite Hearth Troop"
+  ],
+  "Hei Guang Cavalry": [
+   "Hei Guang Cavalry",
+   "Heavy Hei Guang Cavalry"
+  ],
+  "War Chariot": [
+   "War Chariot"
+  ],
+  "Traction Trebuchet": [
+   "Traction Trebuchet"
+  ],
+  "White Feather Guard": [
+   "White Feather Guard",
+   "Elite White Feather Guard"
+  ],
+  "Liu Bei": [
+   "Liu Bei"
+  ],
+  "Serjeant": [
+   "Serjeant",
+   "Elite Serjeant"
+  ],
+  "Boyar": [
+   "Boyar",
+   "Elite Boyar"
+  ],
+  "Conquistador": [
+   "Conquistador",
+   "Elite Conquistador"
+  ],
+  "Missionary": [
+   "Missionary"
+  ],
+  "Flaming Camel": [
+   "Flaming Camel"
+  ],
+  "Keshik": [
+   "Keshik",
+   "Elite Keshik"
+  ],
+  "Teutonic Knight": [
+   "Teutonic Knight",
+   "Elite Teutonic Knight"
+  ],
+  "Ibirapema Warrior": [
+   "Ibirapema Warrior",
+   "Elite Ibirapema Warrior"
+  ],
+  "Blackwood Archer": [
+   "Blackwood Archer",
+   "Elite Blackwood Archer"
+  ],
+  "Janissary": [
+   "Janissary",
+   "Elite Janissary"
+  ],
+  "Jarl": [
+   "Jarl",
+   "Elite Jarl"
+  ],
+  "Rattan Archer": [
+   "Rattan Archer",
+   "Elite Rattan Archer"
+  ],
+  "Berserk": [
+   "Berserk",
+   "Elite Berserk"
+  ],
+  "Xianbei Raider": [
+   "Xianbei Raider"
+  ],
+  "Tiger Cavalry": [
+   "Tiger Cavalry",
+   "Elite Tiger Cavalry"
+  ],
+  "Cao Cao": [
+   "Cao Cao"
+  ],
+  "Jian Swordsman": [
+   "Jian Swordsman"
+  ],
+  "Fire Archer": [
+   "Fire Archer",
+   "Elite Fire Archer"
+  ],
+  "Sun Jian": [
+   "Sun Jian"
+  ]
+ },
+ "classes": {
+  "Spearman-line": [
+   [
+    "Spearman",
+    "Pikeman",
+    "Halberdier"
+   ]
+  ],
+  "Camel Riders": [
+   [
+    "Camel Rider",
+    "Heavy Camel Rider",
+    "Imperial Camel Rider"
+   ]
+  ],
+  "Archery Units": [
+   [
+    "Archer",
+    "Crossbowman",
+    "Arbalester"
+   ],
+   [
+    "Skirmisher",
+    "Elite Skirmisher",
+    "Imperial Skirmisher"
+   ],
+   [
+    "Cavalry Archer",
+    "Heavy Cavalry Archer"
+   ],
+   [
+    "Composite Bowman",
+    "E. Composite Bowman"
+   ],
+   [
+    "Blackwood Archer",
+    "Elite Blackwood Archer"
+   ],
+   [
+    "Bolas Rider",
+    "Elite Bolas Rider"
+   ],
+   [
+    "Camel Archer",
+    "Elite Camel Archer"
+   ],
+   [
+    "Chu Ko Nu",
+    "Elite Chu Ko Nu"
+   ],
+   [
+    "Elephant Archer",
+    "Elite Elephant Archer"
+   ],
+   [
+    "Fire Archer",
+    "Elite Fire Archer"
+   ],
+   [
+    "Genitour",
+    "Elite Genitour"
+   ],
+   [
+    "Genoese Crossbowman",
+    "Elite Genoese Crossbowman"
+   ],
+   [
+    "Grenadier"
+   ],
+   [
+    "Guecha Warrior",
+    "Elite Guecha Warrior"
+   ],
+   [
+    "Hand Cannoneer"
+   ],
+   [
+    "Kipchak",
+    "Elite Kipchak"
+   ],
+   [
+    "Longbowman",
+    "Elite Longbowman"
+   ],
+   [
+    "Mangudai",
+    "Elite Mangudai"
+   ],
+   [
+    "Mounted Crossbowman",
+    "H. Mounted Crossbowman"
+   ],
+   [
+    "Plumed Archer",
+    "Elite Plumed Archer"
+   ],
+   [
+    "Ratha",
+    "Elite Ratha"
+   ],
+   [
+    "Rattan Archer",
+    "Elite Rattan Archer"
+   ],
+   [
+    "Slinger"
+   ],
+   [
+    "War Wagon",
+    "Elite War Wagon"
+   ],
+   [
+    "Xianbei Raider"
+   ]
+  ],
+  "Cavalry": [
+   [
+    "Scout Cavalry",
+    "Light Cavalry",
+    "Hussar",
+    "Winged Hussar"
+   ],
+   [
+    "Knight",
+    "Cavalier",
+    "Paladin"
+   ],
+   [
+    "Camel Rider",
+    "Heavy Camel Rider",
+    "Imperial Camel Rider"
+   ],
+   [
+    "Steppe Lancer",
+    "Elite Steppe Lancer"
+   ],
+   [
+    "Battle Elephant",
+    "Elite Battle Elephant"
+   ],
+   [
+    "Boyar",
+    "Elite Boyar"
+   ],
+   [
+    "Camel Scout"
+   ],
+   [
+    "Cataphract",
+    "Elite Cataphract"
+   ],
+   [
+    "Centurion",
+    "Elite Centurion"
+   ],
+   [
+    "Coustillier",
+    "Elite Coustillier"
+   ],
+   [
+    "Hei Guang Cavalry",
+    "Heavy Hei Guang Cavalry"
+   ],
+   [
+    "Iron Pagoda",
+    "Elite Iron Pagoda"
+   ],
+   [
+    "Jarl",
+    "Elite Jarl"
+   ],
+   [
+    "Keshik",
+    "Elite Keshik"
+   ],
+   [
+    "Kona",
+    "Elite Kona"
+   ],
+   [
+    "Konnik",
+    "Elite Konnik"
+   ],
+   [
+    "Leitis",
+    "Elite Leitis"
+   ],
+   [
+    "Magyar Huszar",
+    "Elite Magyar Huszar"
+   ],
+   [
+    "Mameluke",
+    "Elite Mameluke"
+   ],
+   [
+    "Monaspa",
+    "Elite Monaspa"
+   ],
+   [
+    "Savar"
+   ],
+   [
+    "Shrivamsha Rider",
+    "E. Shrivamsha Rider"
+   ],
+   [
+    "Tarkan",
+    "Elite Tarkan"
+   ],
+   [
+    "Tiger Cavalry",
+    "Elite Tiger Cavalry"
+   ],
+   [
+    "War Elephant",
+    "Elite War Elephant"
+   ]
+  ],
+  "Skirmishers": [
+   [
+    "Skirmisher",
+    "Elite Skirmisher",
+    "Imperial Skirmisher"
+   ],
+   [
+    "Genitour",
+    "Elite Genitour"
+   ],
+   [
+    "Guecha Warrior",
+    "Elite Guecha Warrior"
+   ],
+   [
+    "Slinger"
+   ]
+  ],
+  "Monks": [
+   [
+    "Missionary"
+   ],
+   [
+    "Monk"
+   ],
+   [
+    "Warrior Priest"
+   ]
+  ],
+  "Siege Weapons": [
+   [
+    "Battering Ram",
+    "Capped Ram",
+    "Siege Ram"
+   ],
+   [
+    "Mangonel",
+    "Onager",
+    "Siege Onager"
+   ],
+   [
+    "Scorpion",
+    "Heavy Scorpion"
+   ],
+   [
+    "Armored Elephant"
+   ],
+   [
+    "Ballista Elephant",
+    "Elite Ballista Elephant"
+   ],
+   [
+    "Bombard Cannon"
+   ],
+   [
+    "Cannon Galleon",
+    "Elite Cannon Galleon"
+   ],
+   [
+    "Catapult Galleon"
+   ],
+   [
+    "Dromon"
+   ],
+   [
+    "Flaming Camel"
+   ],
+   [
+    "Houfnice"
+   ],
+   [
+    "Hussite Wagon",
+    "Elite Hussite Wagon"
+   ],
+   [
+    "Lou Chuan"
+   ],
+   [
+    "Mounted Trebuchet"
+   ],
+   [
+    "Organ Gun",
+    "Elite Organ Gun"
+   ],
+   [
+    "Petard"
+   ],
+   [
+    "Rocket Cart",
+    "Heavy Rocket Cart"
+   ],
+   [
+    "Siege Elephant"
+   ],
+   [
+    "Siege Tower"
+   ],
+   [
+    "Traction Trebuchet"
+   ],
+   [
+    "Trebuchet"
+   ],
+   [
+    "Turtle Ship",
+    "Elite Turtle Ship"
+   ],
+   [
+    "War Chariot"
+   ]
+  ],
+  "Ranged Soldiers": [
+   [
+    "Archer",
+    "Crossbowman",
+    "Arbalester"
+   ],
+   [
+    "Skirmisher",
+    "Elite Skirmisher",
+    "Imperial Skirmisher"
+   ],
+   [
+    "Cavalry Archer",
+    "Heavy Cavalry Archer"
+   ],
+   [
+    "Composite Bowman",
+    "E. Composite Bowman"
+   ],
+   [
+    "Blackwood Archer",
+    "Elite Blackwood Archer"
+   ],
+   [
+    "Bolas Rider",
+    "Elite Bolas Rider"
+   ],
+   [
+    "Camel Archer",
+    "Elite Camel Archer"
+   ],
+   [
+    "Chu Ko Nu",
+    "Elite Chu Ko Nu"
+   ],
+   [
+    "Conquistador",
+    "Elite Conquistador"
+   ],
+   [
+    "Elephant Archer",
+    "Elite Elephant Archer"
+   ],
+   [
+    "Fire Archer",
+    "Elite Fire Archer"
+   ],
+   [
+    "Fire Lancer",
+    "Elite Fire Lancer"
+   ],
+   [
+    "Genitour",
+    "Elite Genitour"
+   ],
+   [
+    "Genoese Crossbowman",
+    "Elite Genoese Crossbowman"
+   ],
+   [
+    "Grenadier"
+   ],
+   [
+    "Guecha Warrior",
+    "Elite Guecha Warrior"
+   ],
+   [
+    "Hand Cannoneer"
+   ],
+   [
+    "Janissary",
+    "Elite Janissary"
+   ],
+   [
+    "Kipchak",
+    "Elite Kipchak"
+   ],
+   [
+    "Longbowman",
+    "Elite Longbowman"
+   ],
+   [
+    "Mangudai",
+    "Elite Mangudai"
+   ],
+   [
+    "Mounted Crossbowman",
+    "H. Mounted Crossbowman"
+   ],
+   [
+    "Plumed Archer",
+    "Elite Plumed Archer"
+   ],
+   [
+    "Ratha",
+    "Elite Ratha"
+   ],
+   [
+    "Rattan Archer",
+    "Elite Rattan Archer"
+   ],
+   [
+    "Slinger"
+   ],
+   [
+    "War Wagon",
+    "Elite War Wagon"
+   ],
+   [
+    "Xianbei Raider"
+   ]
+  ],
+  "Ranged Soldiers at long range": [
+   [
+    "Archer",
+    "Crossbowman",
+    "Arbalester"
+   ],
+   [
+    "Skirmisher",
+    "Elite Skirmisher",
+    "Imperial Skirmisher"
+   ],
+   [
+    "Cavalry Archer",
+    "Heavy Cavalry Archer"
+   ],
+   [
+    "Composite Bowman",
+    "E. Composite Bowman"
+   ],
+   [
+    "Blackwood Archer",
+    "Elite Blackwood Archer"
+   ],
+   [
+    "Bolas Rider",
+    "Elite Bolas Rider"
+   ],
+   [
+    "Camel Archer",
+    "Elite Camel Archer"
+   ],
+   [
+    "Chu Ko Nu",
+    "Elite Chu Ko Nu"
+   ],
+   [
+    "Conquistador",
+    "Elite Conquistador"
+   ],
+   [
+    "Elephant Archer",
+    "Elite Elephant Archer"
+   ],
+   [
+    "Fire Archer",
+    "Elite Fire Archer"
+   ],
+   [
+    "Fire Lancer",
+    "Elite Fire Lancer"
+   ],
+   [
+    "Genitour",
+    "Elite Genitour"
+   ],
+   [
+    "Genoese Crossbowman",
+    "Elite Genoese Crossbowman"
+   ],
+   [
+    "Grenadier"
+   ],
+   [
+    "Guecha Warrior",
+    "Elite Guecha Warrior"
+   ],
+   [
+    "Hand Cannoneer"
+   ],
+   [
+    "Janissary",
+    "Elite Janissary"
+   ],
+   [
+    "Kipchak",
+    "Elite Kipchak"
+   ],
+   [
+    "Longbowman",
+    "Elite Longbowman"
+   ],
+   [
+    "Mangudai",
+    "Elite Mangudai"
+   ],
+   [
+    "Mounted Crossbowman",
+    "H. Mounted Crossbowman"
+   ],
+   [
+    "Plumed Archer",
+    "Elite Plumed Archer"
+   ],
+   [
+    "Ratha",
+    "Elite Ratha"
+   ],
+   [
+    "Rattan Archer",
+    "Elite Rattan Archer"
+   ],
+   [
+    "Slinger"
+   ],
+   [
+    "War Wagon",
+    "Elite War Wagon"
+   ],
+   [
+    "Xianbei Raider"
+   ]
+  ],
+  "Militia-line": [
+   [
+    "Militia",
+    "Man-at-Arms",
+    "Long Swordsman",
+    "Two-Handed Swordsman",
+    "Champion"
+   ]
+  ],
+  "Gunners": [
+   [
+    "Conquistador",
+    "Elite Conquistador"
+   ],
+   [
+    "Fire Lancer",
+    "Elite Fire Lancer"
+   ],
+   [
+    "Hand Cannoneer"
+   ],
+   [
+    "Janissary",
+    "Elite Janissary"
+   ]
+  ],
+  "Foot Archers": [
+   [
+    "Archer",
+    "Crossbowman",
+    "Arbalester"
+   ],
+   [
+    "Composite Bowman",
+    "E. Composite Bowman"
+   ],
+   [
+    "Blackwood Archer",
+    "Elite Blackwood Archer"
+   ],
+   [
+    "Chu Ko Nu",
+    "Elite Chu Ko Nu"
+   ],
+   [
+    "Fire Archer",
+    "Elite Fire Archer"
+   ],
+   [
+    "Genoese Crossbowman",
+    "Elite Genoese Crossbowman"
+   ],
+   [
+    "Longbowman",
+    "Elite Longbowman"
+   ],
+   [
+    "Plumed Archer",
+    "Elite Plumed Archer"
+   ],
+   [
+    "Rattan Archer",
+    "Elite Rattan Archer"
+   ]
+  ],
+  "Foot Archers at long range": [
+   [
+    "Archer",
+    "Crossbowman",
+    "Arbalester"
+   ],
+   [
+    "Composite Bowman",
+    "E. Composite Bowman"
+   ],
+   [
+    "Blackwood Archer",
+    "Elite Blackwood Archer"
+   ],
+   [
+    "Chu Ko Nu",
+    "Elite Chu Ko Nu"
+   ],
+   [
+    "Fire Archer",
+    "Elite Fire Archer"
+   ],
+   [
+    "Genoese Crossbowman",
+    "Elite Genoese Crossbowman"
+   ],
+   [
+    "Longbowman",
+    "Elite Longbowman"
+   ],
+   [
+    "Plumed Archer",
+    "Elite Plumed Archer"
+   ],
+   [
+    "Rattan Archer",
+    "Elite Rattan Archer"
+   ]
+  ],
+  "Infantry": [
+   [
+    "Militia",
+    "Man-at-Arms",
+    "Long Swordsman",
+    "Two-Handed Swordsman",
+    "Champion"
+   ],
+   [
+    "Spearman",
+    "Pikeman",
+    "Halberdier"
+   ],
+   [
+    "Eagle Scout",
+    "Eagle Warrior",
+    "Elite Eagle Warrior"
+   ],
+   [
+    "Berserk",
+    "Elite Berserk"
+   ],
+   [
+    "Chakram Thrower",
+    "Elite Chakram Thrower"
+   ],
+   [
+    "Champi Runner"
+   ],
+   [
+    "Champi Scout"
+   ],
+   [
+    "Champi Warrior",
+    "Elite Champi Warrior"
+   ],
+   [
+    "Condottiero"
+   ],
+   [
+    "Fire Lancer",
+    "Elite Fire Lancer"
+   ],
+   [
+    "Flemish Militia"
+   ],
+   [
+    "Gbeto",
+    "Elite Gbeto"
+   ],
+   [
+    "Ghulam",
+    "Elite Ghulam"
+   ],
+   [
+    "Hearth Troop",
+    "Elite Hearth Troop"
+   ],
+   [
+    "Huskarl",
+    "Elite Huskarl"
+   ],
+   [
+    "Ibirapema Warrior",
+    "Elite Ibirapema Warrior"
+   ],
+   [
+    "Jaguar Warrior",
+    "Elite Jaguar Warrior"
+   ],
+   [
+    "Jian Swordsman"
+   ],
+   [
+    "Jomsviking",
+    "Elite Jomsviking"
+   ],
+   [
+    "Kamayuk",
+    "Elite Kamayuk"
+   ],
+   [
+    "Karambit Warrior",
+    "Elite Karambit Warrior"
+   ],
+   [
+    "Konnik",
+    "Elite Konnik"
+   ],
+   [
+    "Legionary"
+   ],
+   [
+    "Liao Dao",
+    "Elite Liao Dao"
+   ],
+   [
+    "Obuch",
+    "Elite Obuch"
+   ],
+   [
+    "Samurai",
+    "Elite Samurai"
+   ],
+   [
+    "Serjeant",
+    "Elite Serjeant"
+   ],
+   [
+    "Shotel Warrior",
+    "Elite Shotel Warrior"
+   ],
+   [
+    "Temple Guard",
+    "Elite Temple Guard"
+   ],
+   [
+    "Teutonic Knight",
+    "Elite Teutonic Knight"
+   ],
+   [
+    "Throwing Axeman",
+    "Elite Throwing Axeman"
+   ],
+   [
+    "Urumi Swordsman",
+    "Elite Urumi Swordsman"
+   ],
+   [
+    "Varangian Guard",
+    "E. Varangian Guard"
+   ],
+   [
+    "Warrior Priest"
+   ],
+   [
+    "White Feather Guard",
+    "Elite White Feather Guard"
+   ],
+   [
+    "Woad Raider",
+    "Elite Woad Raider"
+   ]
+  ],
+  "Mangonel-line": [
+   [
+    "Mangonel",
+    "Onager",
+    "Siege Onager"
+   ]
+  ],
+  "Fire Ships": [
+   [
+    "Fire Galley",
+    "Fire Ship",
+    "Fast Fire Ship"
+   ]
+  ],
+  "Galleys": [
+   [
+    "Galley",
+    "War Galley",
+    "Galleon"
+   ]
+  ],
+  "Galley-line": [
+   [
+    "Galley",
+    "War Galley",
+    "Galleon"
+   ]
+  ],
+  "Scorpions": [
+   [
+    "Scorpion",
+    "Heavy Scorpion"
+   ]
+  ],
+  "Hulk-line": [
+   [
+    "Hulk",
+    "War Hulk",
+    "Carrack"
+   ]
+  ],
+  "Scout Cavalry-line": [
+   [
+    "Scout Cavalry",
+    "Light Cavalry",
+    "Hussar",
+    "Winged Hussar"
+   ]
+  ],
+  "Eagle Warriors": [
+   [
+    "Eagle Scout",
+    "Eagle Warrior",
+    "Elite Eagle Warrior"
+   ]
+  ],
+  "Mounted Archers": [
+   [
+    "Cavalry Archer",
+    "Heavy Cavalry Archer"
+   ],
+   [
+    "Bolas Rider",
+    "Elite Bolas Rider"
+   ],
+   [
+    "Camel Archer",
+    "Elite Camel Archer"
+   ],
+   [
+    "Elephant Archer",
+    "Elite Elephant Archer"
+   ],
+   [
+    "Kipchak",
+    "Elite Kipchak"
+   ],
+   [
+    "Mangudai",
+    "Elite Mangudai"
+   ],
+   [
+    "Mounted Crossbowman",
+    "H. Mounted Crossbowman"
+   ],
+   [
+    "Ratha",
+    "Elite Ratha"
+   ],
+   [
+    "War Wagon",
+    "Elite War Wagon"
+   ],
+   [
+    "Xianbei Raider"
+   ]
+  ],
+  "Demolition Ships": [
+   [
+    "Demolition Raft",
+    "Demolition Ship",
+    "Heavy Demo Ship"
+   ]
+  ],
+  "units at close range": [
+   [
+    "Militia",
+    "Man-at-Arms",
+    "Long Swordsman",
+    "Two-Handed Swordsman",
+    "Champion"
+   ],
+   [
+    "Spearman",
+    "Pikeman",
+    "Halberdier"
+   ],
+   [
+    "Eagle Scout",
+    "Eagle Warrior",
+    "Elite Eagle Warrior"
+   ],
+   [
+    "Scout Cavalry",
+    "Light Cavalry",
+    "Hussar",
+    "Winged Hussar"
+   ],
+   [
+    "Knight",
+    "Cavalier",
+    "Paladin"
+   ],
+   [
+    "Camel Rider",
+    "Heavy Camel Rider",
+    "Imperial Camel Rider"
+   ],
+   [
+    "Steppe Lancer",
+    "Elite Steppe Lancer"
+   ],
+   [
+    "Battle Elephant",
+    "Elite Battle Elephant"
+   ],
+   [
+    "Berserk",
+    "Elite Berserk"
+   ],
+   [
+    "Boyar",
+    "Elite Boyar"
+   ],
+   [
+    "Camel Scout"
+   ],
+   [
+    "Cataphract",
+    "Elite Cataphract"
+   ],
+   [
+    "Centurion",
+    "Elite Centurion"
+   ],
+   [
+    "Chakram Thrower",
+    "Elite Chakram Thrower"
+   ],
+   [
+    "Champi Runner"
+   ],
+   [
+    "Champi Scout"
+   ],
+   [
+    "Champi Warrior",
+    "Elite Champi Warrior"
+   ],
+   [
+    "Condottiero"
+   ],
+   [
+    "Coustillier",
+    "Elite Coustillier"
+   ],
+   [
+    "Flemish Militia"
+   ],
+   [
+    "Gbeto",
+    "Elite Gbeto"
+   ],
+   [
+    "Ghulam",
+    "Elite Ghulam"
+   ],
+   [
+    "Hearth Troop",
+    "Elite Hearth Troop"
+   ],
+   [
+    "Hei Guang Cavalry",
+    "Heavy Hei Guang Cavalry"
+   ],
+   [
+    "Huskarl",
+    "Elite Huskarl"
+   ],
+   [
+    "Ibirapema Warrior",
+    "Elite Ibirapema Warrior"
+   ],
+   [
+    "Iron Pagoda",
+    "Elite Iron Pagoda"
+   ],
+   [
+    "Jaguar Warrior",
+    "Elite Jaguar Warrior"
+   ],
+   [
+    "Jarl",
+    "Elite Jarl"
+   ],
+   [
+    "Jian Swordsman"
+   ],
+   [
+    "Jomsviking",
+    "Elite Jomsviking"
+   ],
+   [
+    "Kamayuk",
+    "Elite Kamayuk"
+   ],
+   [
+    "Karambit Warrior",
+    "Elite Karambit Warrior"
+   ],
+   [
+    "Keshik",
+    "Elite Keshik"
+   ],
+   [
+    "Kona",
+    "Elite Kona"
+   ],
+   [
+    "Konnik",
+    "Elite Konnik"
+   ],
+   [
+    "Legionary"
+   ],
+   [
+    "Leitis",
+    "Elite Leitis"
+   ],
+   [
+    "Liao Dao",
+    "Elite Liao Dao"
+   ],
+   [
+    "Magyar Huszar",
+    "Elite Magyar Huszar"
+   ],
+   [
+    "Mameluke",
+    "Elite Mameluke"
+   ],
+   [
+    "Monaspa",
+    "Elite Monaspa"
+   ],
+   [
+    "Obuch",
+    "Elite Obuch"
+   ],
+   [
+    "Samurai",
+    "Elite Samurai"
+   ],
+   [
+    "Savar"
+   ],
+   [
+    "Serjeant",
+    "Elite Serjeant"
+   ],
+   [
+    "Shotel Warrior",
+    "Elite Shotel Warrior"
+   ],
+   [
+    "Shrivamsha Rider",
+    "E. Shrivamsha Rider"
+   ],
+   [
+    "Tarkan",
+    "Elite Tarkan"
+   ],
+   [
+    "Temple Guard",
+    "Elite Temple Guard"
+   ],
+   [
+    "Teutonic Knight",
+    "Elite Teutonic Knight"
+   ],
+   [
+    "Throwing Axeman",
+    "Elite Throwing Axeman"
+   ],
+   [
+    "Tiger Cavalry",
+    "Elite Tiger Cavalry"
+   ],
+   [
+    "Urumi Swordsman",
+    "Elite Urumi Swordsman"
+   ],
+   [
+    "Varangian Guard",
+    "E. Varangian Guard"
+   ],
+   [
+    "War Elephant",
+    "Elite War Elephant"
+   ],
+   [
+    "White Feather Guard",
+    "Elite White Feather Guard"
+   ],
+   [
+    "Woad Raider",
+    "Elite Woad Raider"
+   ]
+  ],
+  "melee units": [
+   [
+    "Militia",
+    "Man-at-Arms",
+    "Long Swordsman",
+    "Two-Handed Swordsman",
+    "Champion"
+   ],
+   [
+    "Spearman",
+    "Pikeman",
+    "Halberdier"
+   ],
+   [
+    "Eagle Scout",
+    "Eagle Warrior",
+    "Elite Eagle Warrior"
+   ],
+   [
+    "Scout Cavalry",
+    "Light Cavalry",
+    "Hussar",
+    "Winged Hussar"
+   ],
+   [
+    "Knight",
+    "Cavalier",
+    "Paladin"
+   ],
+   [
+    "Camel Rider",
+    "Heavy Camel Rider",
+    "Imperial Camel Rider"
+   ],
+   [
+    "Steppe Lancer",
+    "Elite Steppe Lancer"
+   ],
+   [
+    "Battle Elephant",
+    "Elite Battle Elephant"
+   ],
+   [
+    "Berserk",
+    "Elite Berserk"
+   ],
+   [
+    "Boyar",
+    "Elite Boyar"
+   ],
+   [
+    "Camel Scout"
+   ],
+   [
+    "Cataphract",
+    "Elite Cataphract"
+   ],
+   [
+    "Centurion",
+    "Elite Centurion"
+   ],
+   [
+    "Chakram Thrower",
+    "Elite Chakram Thrower"
+   ],
+   [
+    "Champi Runner"
+   ],
+   [
+    "Champi Scout"
+   ],
+   [
+    "Champi Warrior",
+    "Elite Champi Warrior"
+   ],
+   [
+    "Condottiero"
+   ],
+   [
+    "Coustillier",
+    "Elite Coustillier"
+   ],
+   [
+    "Flemish Militia"
+   ],
+   [
+    "Gbeto",
+    "Elite Gbeto"
+   ],
+   [
+    "Ghulam",
+    "Elite Ghulam"
+   ],
+   [
+    "Hearth Troop",
+    "Elite Hearth Troop"
+   ],
+   [
+    "Hei Guang Cavalry",
+    "Heavy Hei Guang Cavalry"
+   ],
+   [
+    "Huskarl",
+    "Elite Huskarl"
+   ],
+   [
+    "Ibirapema Warrior",
+    "Elite Ibirapema Warrior"
+   ],
+   [
+    "Iron Pagoda",
+    "Elite Iron Pagoda"
+   ],
+   [
+    "Jaguar Warrior",
+    "Elite Jaguar Warrior"
+   ],
+   [
+    "Jarl",
+    "Elite Jarl"
+   ],
+   [
+    "Jian Swordsman"
+   ],
+   [
+    "Jomsviking",
+    "Elite Jomsviking"
+   ],
+   [
+    "Kamayuk",
+    "Elite Kamayuk"
+   ],
+   [
+    "Karambit Warrior",
+    "Elite Karambit Warrior"
+   ],
+   [
+    "Keshik",
+    "Elite Keshik"
+   ],
+   [
+    "Kona",
+    "Elite Kona"
+   ],
+   [
+    "Konnik",
+    "Elite Konnik"
+   ],
+   [
+    "Legionary"
+   ],
+   [
+    "Leitis",
+    "Elite Leitis"
+   ],
+   [
+    "Liao Dao",
+    "Elite Liao Dao"
+   ],
+   [
+    "Magyar Huszar",
+    "Elite Magyar Huszar"
+   ],
+   [
+    "Mameluke",
+    "Elite Mameluke"
+   ],
+   [
+    "Monaspa",
+    "Elite Monaspa"
+   ],
+   [
+    "Obuch",
+    "Elite Obuch"
+   ],
+   [
+    "Samurai",
+    "Elite Samurai"
+   ],
+   [
+    "Savar"
+   ],
+   [
+    "Serjeant",
+    "Elite Serjeant"
+   ],
+   [
+    "Shotel Warrior",
+    "Elite Shotel Warrior"
+   ],
+   [
+    "Shrivamsha Rider",
+    "E. Shrivamsha Rider"
+   ],
+   [
+    "Tarkan",
+    "Elite Tarkan"
+   ],
+   [
+    "Temple Guard",
+    "Elite Temple Guard"
+   ],
+   [
+    "Teutonic Knight",
+    "Elite Teutonic Knight"
+   ],
+   [
+    "Throwing Axeman",
+    "Elite Throwing Axeman"
+   ],
+   [
+    "Tiger Cavalry",
+    "Elite Tiger Cavalry"
+   ],
+   [
+    "Urumi Swordsman",
+    "Elite Urumi Swordsman"
+   ],
+   [
+    "Varangian Guard",
+    "E. Varangian Guard"
+   ],
+   [
+    "War Elephant",
+    "Elite War Elephant"
+   ],
+   [
+    "White Feather Guard",
+    "Elite White Feather Guard"
+   ],
+   [
+    "Woad Raider",
+    "Elite Woad Raider"
+   ]
+  ]
+ },
+ "units": {
+  "Archer": {
+   "line": "Archer",
+   "group": "Archers",
+   "unique": false,
+   "weak_vs": [
+    "Skirmishers",
+    "Mangonel-line",
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range"
+   ]
+  },
+  "Crossbowman": {
+   "line": "Archer",
+   "group": "Archers",
+   "unique": false,
+   "weak_vs": [
+    "Skirmishers",
+    "Mangonel-line",
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range"
+   ]
+  },
+  "Arbalester": {
+   "line": "Archer",
+   "group": "Archers",
+   "unique": false,
+   "weak_vs": [
+    "Skirmishers",
+    "Mangonel-line",
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range"
+   ]
+  },
+  "Skirmisher": {
+   "line": "Skirmisher",
+   "group": "Archers",
+   "unique": false,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers",
+    "Spearman-line"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Skirmishers",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range"
+   ]
+  },
+  "Elite Skirmisher": {
+   "line": "Skirmisher",
+   "group": "Archers",
+   "unique": false,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers",
+    "Spearman-line"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Skirmishers",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range"
+   ]
+  },
+  "Cavalry Archer": {
+   "line": "Cavalry Archer",
+   "group": "Cav. Archers",
+   "unique": false,
+   "weak_vs": [
+    "Skirmishers",
+    "Scorpions",
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units"
+   ]
+  },
+  "Militia": {
+   "line": "Militia",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Scout Cavalry-line",
+    "Skirmishers"
+   ],
+   "member_of": [
+    "Militia-line",
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Man-at-Arms": {
+   "line": "Militia",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Scout Cavalry-line",
+    "Skirmishers"
+   ],
+   "member_of": [
+    "Militia-line",
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Long Swordsman": {
+   "line": "Militia",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Scout Cavalry-line",
+    "Skirmishers"
+   ],
+   "member_of": [
+    "Militia-line",
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Two-Handed Swordsman": {
+   "line": "Militia",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Scout Cavalry-line",
+    "Skirmishers"
+   ],
+   "member_of": [
+    "Militia-line",
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Champion": {
+   "line": "Militia",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Scout Cavalry-line",
+    "Skirmishers"
+   ],
+   "member_of": [
+    "Militia-line",
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Spearman": {
+   "line": "Spearman",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Ranged Soldiers",
+    "Infantry"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Spearman-line",
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Pikeman": {
+   "line": "Spearman",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Ranged Soldiers",
+    "Infantry"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Spearman-line",
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Halberdier": {
+   "line": "Spearman",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Ranged Soldiers",
+    "Infantry"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Spearman-line",
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Scout Cavalry": {
+   "line": "Scout Cavalry",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Monks"
+   ],
+   "member_of": [
+    "Cavalry",
+    "Scout Cavalry-line",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Light Cavalry": {
+   "line": "Scout Cavalry",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Monks"
+   ],
+   "member_of": [
+    "Cavalry",
+    "Scout Cavalry-line",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Knight": {
+   "line": "Knight",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Cavalier": {
+   "line": "Knight",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Battering Ram": {
+   "line": "Battering Ram",
+   "group": "Siege",
+   "unique": false,
+   "weak_vs": [
+    "melee units"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons"
+   ]
+  },
+  "Capped Ram": {
+   "line": "Battering Ram",
+   "group": "Siege",
+   "unique": false,
+   "weak_vs": [
+    "melee units"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons"
+   ]
+  },
+  "Siege Ram": {
+   "line": "Battering Ram",
+   "group": "Siege",
+   "unique": false,
+   "weak_vs": [
+    "melee units"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons"
+   ]
+  },
+  "Mangonel": {
+   "line": "Mangonel",
+   "group": "Siege",
+   "unique": false,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Mangonel-line"
+   ]
+  },
+  "Onager": {
+   "line": "Mangonel",
+   "group": "Siege",
+   "unique": false,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Mangonel-line"
+   ]
+  },
+  "Scorpion": {
+   "line": "Scorpion",
+   "group": "Siege",
+   "unique": false,
+   "weak_vs": [
+    "Siege Weapons",
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Scorpions"
+   ]
+  },
+  "Heavy Scorpion": {
+   "line": "Scorpion",
+   "group": "Siege",
+   "unique": false,
+   "weak_vs": [
+    "Siege Weapons",
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Scorpions"
+   ]
+  },
+  "Siege Tower": {
+   "line": "Siege Tower",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "melee units"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Fishing Ship": {
+   "line": "Fishing Ship",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": [
+    "Warships"
+   ]
+  },
+  "Transport Ship": {
+   "line": "Transport Ship",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": [
+    "Warships"
+   ]
+  },
+  "Fire Galley": {
+   "line": "Fire Galley",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Hulk-line"
+   ],
+   "strong_vs": [
+    "Galley-line"
+   ],
+   "member_of": [
+    "Fire Ships",
+    "Warships"
+   ]
+  },
+  "Fire Ship": {
+   "line": "Fire Galley",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Hulk-line"
+   ],
+   "strong_vs": [
+    "Galley-line"
+   ],
+   "member_of": [
+    "Fire Ships",
+    "Warships"
+   ]
+  },
+  "Galley": {
+   "line": "Galley",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Fire Ships"
+   ],
+   "strong_vs": [
+    "Hulk-line"
+   ],
+   "member_of": [
+    "Galleys",
+    "Galley-line",
+    "Warships"
+   ]
+  },
+  "War Galley": {
+   "line": "Galley",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Fire Ships"
+   ],
+   "strong_vs": [
+    "Hulk-line"
+   ],
+   "member_of": [
+    "Galleys",
+    "Galley-line",
+    "Warships"
+   ]
+  },
+  "Galleon": {
+   "line": "Galley",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Fire Ships"
+   ],
+   "strong_vs": [
+    "Hulk-line"
+   ],
+   "member_of": [
+    "Galleys",
+    "Galley-line",
+    "Warships"
+   ]
+  },
+  "Hulk": {
+   "line": "Hulk",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Galleys"
+   ],
+   "strong_vs": [
+    "Fire Ships"
+   ],
+   "member_of": [
+    "Hulk-line",
+    "Warships"
+   ]
+  },
+  "War Hulk": {
+   "line": "Hulk",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Galleys"
+   ],
+   "strong_vs": [
+    "Fire Ships"
+   ],
+   "member_of": [
+    "Hulk-line",
+    "Warships"
+   ]
+  },
+  "Carrack": {
+   "line": "Hulk",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Galleys"
+   ],
+   "strong_vs": [
+    "Fire Ships"
+   ],
+   "member_of": [
+    "Hulk-line",
+    "Warships"
+   ]
+  },
+  "Demolition Raft": {
+   "line": "Demolition Raft",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Demolition Ships",
+    "Warships"
+   ]
+  },
+  "Demolition Ship": {
+   "line": "Demolition Raft",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Demolition Ships",
+    "Warships"
+   ]
+  },
+  "Heavy Demo Ship": {
+   "line": "Demolition Raft",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Demolition Ships",
+    "Warships"
+   ]
+  },
+  "Trade Cog": {
+   "line": "Trade Cog",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": [
+    "Warships"
+   ]
+  },
+  "Dromon": {
+   "line": "Dromon",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Composite Bowman": {
+   "line": "Composite Bowman",
+   "group": "Archers",
+   "unique": false,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Cavalry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range"
+   ]
+  },
+  "E. Composite Bowman": {
+   "line": "Composite Bowman",
+   "group": "Archers",
+   "unique": false,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Cavalry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range"
+   ]
+  },
+  "Petard": {
+   "line": "Petard",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Trebuchet": {
+   "line": "Trebuchet",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Monk": {
+   "line": "Monk",
+   "group": "Monks",
+   "unique": true,
+   "weak_vs": [
+    "Scout Cavalry-line",
+    "Eagle Warriors",
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Monks",
+    "Unique Units"
+   ]
+  },
+  "Warrior Priest": {
+   "line": "Warrior Priest",
+   "group": "Monks",
+   "unique": true,
+   "weak_vs": [
+    "Scout Cavalry-line",
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Monks",
+    "Infantry",
+    "Unique Units"
+   ]
+  },
+  "Villager": {
+   "line": "Villager",
+   "group": "Other",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": []
+  },
+  "Trade Cart": {
+   "line": "Trade Cart",
+   "group": "Other",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": []
+  },
+  "Eagle Scout": {
+   "line": "Eagle Scout",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Militia-line",
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Monks",
+    "Archery Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "Eagle Warriors",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Eagle Warrior": {
+   "line": "Eagle Scout",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Militia-line",
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Monks",
+    "Archery Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "Eagle Warriors",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Elite Eagle Warrior": {
+   "line": "Eagle Scout",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [
+    "Militia-line",
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Monks",
+    "Archery Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "Eagle Warriors",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Siege Onager": {
+   "line": "Mangonel",
+   "group": "Siege",
+   "unique": false,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Mangonel-line"
+   ]
+  },
+  "Fast Fire Ship": {
+   "line": "Fire Galley",
+   "group": "Ships",
+   "unique": false,
+   "weak_vs": [
+    "Hulk-line"
+   ],
+   "strong_vs": [
+    "Galley-line"
+   ],
+   "member_of": [
+    "Fire Ships",
+    "Warships"
+   ]
+  },
+  "Catapult Galleon": {
+   "line": "Catapult Galleon",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Jaguar Warrior": {
+   "line": "Jaguar Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Jaguar Warrior": {
+   "line": "Jaguar Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elephant Archer": {
+   "line": "Elephant Archer",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Archery Units",
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Elephant Archer": {
+   "line": "Elephant Archer",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Archery Units",
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Battle Elephant": {
+   "line": "Battle Elephant",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Monks",
+    "Spearman-line"
+   ],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Elite Battle Elephant": {
+   "line": "Battle Elephant",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Monks",
+    "Spearman-line"
+   ],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Armored Elephant": {
+   "line": "Armored Elephant",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Siege Elephant": {
+   "line": "Siege Elephant",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Cannon Galleon": {
+   "line": "Cannon Galleon",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Elite Cannon Galleon": {
+   "line": "Cannon Galleon",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Ratha": {
+   "line": "Ratha",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Ratha": {
+   "line": "Ratha",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Hand Cannoneer": {
+   "line": "Hand Cannoneer",
+   "group": "Gunpowder",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Gunners",
+    "Gunpowder Units",
+    "Unique Units"
+   ]
+  },
+  "Heavy Cavalry Archer": {
+   "line": "Cavalry Archer",
+   "group": "Cav. Archers",
+   "unique": false,
+   "weak_vs": [
+    "Skirmishers",
+    "Scorpions",
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units"
+   ]
+  },
+  "Genitour": {
+   "line": "Genitour",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Skirmishers",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Genitour": {
+   "line": "Genitour",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Skirmishers",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Unique Units"
+   ]
+  },
+  "Hussar": {
+   "line": "Scout Cavalry",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Monks"
+   ],
+   "member_of": [
+    "Cavalry",
+    "Scout Cavalry-line",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Camel Rider": {
+   "line": "Camel Rider",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Infantry",
+    "Monks",
+    "Foot Archers"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Camel Riders",
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Heavy Camel Rider": {
+   "line": "Camel Rider",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Infantry",
+    "Monks",
+    "Foot Archers"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Camel Riders",
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Bombard Cannon": {
+   "line": "Bombard Cannon",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Camel Archer": {
+   "line": "Camel Archer",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Mounted Archers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Camel Archer": {
+   "line": "Camel Archer",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Mounted Archers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Mounted Crossbowman": {
+   "line": "Mounted Crossbowman",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Skirmishers",
+    "Scorpions",
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Houfnice": {
+   "line": "Houfnice",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Hussite Wagon": {
+   "line": "Hussite Wagon",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Mangonel-line"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Elite Hussite Wagon": {
+   "line": "Hussite Wagon",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Mangonel-line"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "H. Mounted Crossbowman": {
+   "line": "Mounted Crossbowman",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Skirmishers",
+    "Scorpions",
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Longbowman": {
+   "line": "Longbowman",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Skirmishers"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Longbowman": {
+   "line": "Longbowman",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Skirmishers"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Konnik": {
+   "line": "Konnik",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Cavalry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Konnik": {
+   "line": "Konnik",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Cavalry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Flemish Militia": {
+   "line": "Flemish Militia",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Paladin": {
+   "line": "Knight",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Coustillier": {
+   "line": "Coustillier",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Archery Units"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Coustillier": {
+   "line": "Coustillier",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Archery Units"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Arambai": {
+   "line": "Arambai",
+   "group": "Other",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Unique Units"
+   ]
+  },
+  "Elite Arambai": {
+   "line": "Arambai",
+   "group": "Other",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Unique Units"
+   ]
+  },
+  "Varangian Guard": {
+   "line": "Varangian Guard",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Militia-line"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "E. Varangian Guard": {
+   "line": "Varangian Guard",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Militia-line"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Cataphract": {
+   "line": "Cataphract",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Cataphract": {
+   "line": "Cataphract",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Woad Raider": {
+   "line": "Woad Raider",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Woad Raider": {
+   "line": "Woad Raider",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Fire Lancer": {
+   "line": "Fire Lancer",
+   "group": "Gunpowder",
+   "unique": true,
+   "weak_vs": [
+    "Militia-line",
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Gunners",
+    "Infantry",
+    "Gunpowder Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Fire Lancer": {
+   "line": "Fire Lancer",
+   "group": "Gunpowder",
+   "unique": true,
+   "weak_vs": [
+    "Militia-line",
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Gunners",
+    "Infantry",
+    "Gunpowder Units",
+    "Unique Units"
+   ]
+  },
+  "Rocket Cart": {
+   "line": "Rocket Cart",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Heavy Rocket Cart": {
+   "line": "Rocket Cart",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Dragon Ship": {
+   "line": "Dragon Ship",
+   "group": "Ships",
+   "unique": true,
+   "weak_vs": [
+    "Demolition Ships"
+   ],
+   "strong_vs": [
+    "Galley-line"
+   ],
+   "member_of": [
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Lou Chuan": {
+   "line": "Lou Chuan",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Fire Ships"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Chu Ko Nu": {
+   "line": "Chu Ko Nu",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Chu Ko Nu": {
+   "line": "Chu Ko Nu",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Steppe Lancer": {
+   "line": "Steppe Lancer",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Cavalry",
+    "Camel Riders",
+    "Archery Units"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Elite Steppe Lancer": {
+   "line": "Steppe Lancer",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Cavalry",
+    "Camel Riders",
+    "Archery Units"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Kipchak": {
+   "line": "Kipchak",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Foot Archers"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Kipchak": {
+   "line": "Kipchak",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Foot Archers"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Longship": {
+   "line": "Longship",
+   "group": "Ships",
+   "unique": true,
+   "weak_vs": [
+    "Galley-line"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Elite Longship": {
+   "line": "Longship",
+   "group": "Ships",
+   "unique": true,
+   "weak_vs": [
+    "Galley-line"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Jomsviking": {
+   "line": "Jomsviking",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Jomsviking": {
+   "line": "Jomsviking",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Thirisadai": {
+   "line": "Thirisadai",
+   "group": "Ships",
+   "unique": true,
+   "weak_vs": [
+    "Fire Ships"
+   ],
+   "strong_vs": [
+    "Warships"
+   ],
+   "member_of": [
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Urumi Swordsman": {
+   "line": "Urumi Swordsman",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Urumi Swordsman": {
+   "line": "Urumi Swordsman",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Shotel Warrior": {
+   "line": "Shotel Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Shotel Warrior": {
+   "line": "Shotel Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Throwing Axeman": {
+   "line": "Throwing Axeman",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Throwing Axeman": {
+   "line": "Throwing Axeman",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Monaspa": {
+   "line": "Monaspa",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Cavalry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Monaspa": {
+   "line": "Monaspa",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Cavalry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Huskarl": {
+   "line": "Huskarl",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Militia-line"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Huskarl": {
+   "line": "Huskarl",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Militia-line"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Camel Scout": {
+   "line": "Camel Scout",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Infantry",
+    "Monks",
+    "Foot Archers"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Shrivamsha Rider": {
+   "line": "Shrivamsha Rider",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "E. Shrivamsha Rider": {
+   "line": "Shrivamsha Rider",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Chakram Thrower": {
+   "line": "Chakram Thrower",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Chakram Thrower": {
+   "line": "Chakram Thrower",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Imperial Camel Rider": {
+   "line": "Camel Rider",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Infantry",
+    "Monks",
+    "Foot Archers"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Camel Riders",
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Ghulam": {
+   "line": "Ghulam",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Archery Units",
+    "Spearman-line"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Ghulam": {
+   "line": "Ghulam",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Archery Units",
+    "Spearman-line"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Tarkan": {
+   "line": "Tarkan",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Tarkan": {
+   "line": "Tarkan",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Slinger": {
+   "line": "Slinger",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers",
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Monks",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Skirmishers",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Unique Units"
+   ]
+  },
+  "Champi Scout": {
+   "line": "Champi Scout",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Foot Archers",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Champi Runner": {
+   "line": "Champi Runner",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Foot Archers",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Champi Warrior": {
+   "line": "Champi Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Foot Archers",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Champi Warrior": {
+   "line": "Champi Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Foot Archers",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Kamayuk": {
+   "line": "Kamayuk",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Cavalry",
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Kamayuk": {
+   "line": "Kamayuk",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Cavalry",
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Condottiero": {
+   "line": "Condottiero",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Gunpowder Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Genoese Crossbowman": {
+   "line": "Genoese Crossbowman",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Genoese Crossbowman": {
+   "line": "Genoese Crossbowman",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Samurai": {
+   "line": "Samurai",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Unique Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Samurai": {
+   "line": "Samurai",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Unique Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Grenadier": {
+   "line": "Grenadier",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers",
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Unique Units"
+   ]
+  },
+  "Iron Pagoda": {
+   "line": "Iron Pagoda",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Iron Pagoda": {
+   "line": "Iron Pagoda",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Mounted Trebuchet": {
+   "line": "Mounted Trebuchet",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Liao Dao": {
+   "line": "Liao Dao",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "Cavalry",
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Liao Dao": {
+   "line": "Liao Dao",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "Cavalry",
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Ballista Elephant": {
+   "line": "Ballista Elephant",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Elite Ballista Elephant": {
+   "line": "Ballista Elephant",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Turtle Ship": {
+   "line": "Turtle Ship",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Galleys"
+   ],
+   "strong_vs": [
+    "Warships"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Elite Turtle Ship": {
+   "line": "Turtle Ship",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Galleys"
+   ],
+   "strong_vs": [
+    "Warships"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "War Wagon": {
+   "line": "War Wagon",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Archery Units"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite War Wagon": {
+   "line": "War Wagon",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Archery Units"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Winged Hussar": {
+   "line": "Scout Cavalry",
+   "group": "Cavalry",
+   "unique": false,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Monks"
+   ],
+   "member_of": [
+    "Cavalry",
+    "Scout Cavalry-line",
+    "units at close range",
+    "melee units",
+    "Mounted Units"
+   ]
+  },
+  "Leitis": {
+   "line": "Leitis",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Cavalry",
+    "Infantry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Leitis": {
+   "line": "Leitis",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units"
+   ],
+   "strong_vs": [
+    "Cavalry",
+    "Infantry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Magyar Huszar": {
+   "line": "Magyar Huszar",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Magyar Huszar": {
+   "line": "Magyar Huszar",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Karambit Warrior": {
+   "line": "Karambit Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Karambit Warrior": {
+   "line": "Karambit Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Gbeto": {
+   "line": "Gbeto",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Gbeto": {
+   "line": "Gbeto",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Bolas Rider": {
+   "line": "Bolas Rider",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Foot Archers",
+    "Skirmishers",
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Bolas Rider": {
+   "line": "Bolas Rider",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Foot Archers",
+    "Skirmishers",
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Kona": {
+   "line": "Kona",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Kona": {
+   "line": "Kona",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Plumed Archer": {
+   "line": "Plumed Archer",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Archery Units",
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Plumed Archer": {
+   "line": "Plumed Archer",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Archery Units",
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Mangudai": {
+   "line": "Mangudai",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Skirmishers",
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Siege Weapons",
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Mangudai": {
+   "line": "Mangudai",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Skirmishers",
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Siege Weapons",
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Temple Guard": {
+   "line": "Temple Guard",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Militia-line"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Temple Guard": {
+   "line": "Temple Guard",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Militia-line"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Guecha Warrior": {
+   "line": "Guecha Warrior",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Skirmishers",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Guecha Warrior": {
+   "line": "Guecha Warrior",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Skirmishers",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Unique Units"
+   ]
+  },
+  "Savar": {
+   "line": "Savar",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "War Elephant": {
+   "line": "War Elephant",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Monks"
+   ],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite War Elephant": {
+   "line": "War Elephant",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Monks"
+   ],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Obuch": {
+   "line": "Obuch",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Cavalry",
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Obuch": {
+   "line": "Obuch",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Cavalry",
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Caravel": {
+   "line": "Caravel",
+   "group": "Ships",
+   "unique": true,
+   "weak_vs": [
+    "Fire Ships"
+   ],
+   "strong_vs": [
+    "Warships"
+   ],
+   "member_of": [
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Elite Caravel": {
+   "line": "Caravel",
+   "group": "Ships",
+   "unique": true,
+   "weak_vs": [
+    "Fire Ships"
+   ],
+   "strong_vs": [
+    "Warships"
+   ],
+   "member_of": [
+    "Warships",
+    "Unique Units"
+   ]
+  },
+  "Organ Gun": {
+   "line": "Organ Gun",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Mangonel-line"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Elite Organ Gun": {
+   "line": "Organ Gun",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Mangonel-line"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Legionary": {
+   "line": "Legionary",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers at long range"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Scout Cavalry-line",
+    "Skirmishers"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Centurion": {
+   "line": "Centurion",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Centurion": {
+   "line": "Centurion",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Mameluke": {
+   "line": "Mameluke",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Spearman-line"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Mameluke": {
+   "line": "Mameluke",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Spearman-line"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Hearth Troop": {
+   "line": "Hearth Troop",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Hearth Troop": {
+   "line": "Hearth Troop",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Hei Guang Cavalry": {
+   "line": "Hei Guang Cavalry",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Heavy Hei Guang Cavalry": {
+   "line": "Hei Guang Cavalry",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Foot Archers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "War Chariot": {
+   "line": "War Chariot",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Traction Trebuchet": {
+   "line": "Traction Trebuchet",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "White Feather Guard": {
+   "line": "White Feather Guard",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite White Feather Guard": {
+   "line": "White Feather Guard",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [
+    "Cavalry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Liu Bei": {
+   "line": "Liu Bei",
+   "group": "Infantry",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units"
+   ]
+  },
+  "Serjeant": {
+   "line": "Serjeant",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Mounted Archers",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Camel Riders"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Serjeant": {
+   "line": "Serjeant",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Mounted Archers",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Camel Riders"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Boyar": {
+   "line": "Boyar",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Monks"
+   ],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Boyar": {
+   "line": "Boyar",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Monks"
+   ],
+   "strong_vs": [
+    "units at close range"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Conquistador": {
+   "line": "Conquistador",
+   "group": "Gunpowder",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Skirmishers",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Gunners",
+    "Gunpowder Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Conquistador": {
+   "line": "Conquistador",
+   "group": "Gunpowder",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Skirmishers",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Gunners",
+    "Gunpowder Units",
+    "Unique Units"
+   ]
+  },
+  "Missionary": {
+   "line": "Missionary",
+   "group": "Monks",
+   "unique": true,
+   "weak_vs": [
+    "Scout Cavalry-line",
+    "Eagle Warriors",
+    "Ranged Soldiers"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Monks",
+    "Unique Units"
+   ]
+  },
+  "Flaming Camel": {
+   "line": "Flaming Camel",
+   "group": "Siege",
+   "unique": true,
+   "weak_vs": [
+    "Foot Archers",
+    "Infantry"
+   ],
+   "strong_vs": [
+    "Mounted Units"
+   ],
+   "member_of": [
+    "Siege Weapons",
+    "Unique Units"
+   ]
+  },
+  "Keshik": {
+   "line": "Keshik",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Archery Units"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Keshik": {
+   "line": "Keshik",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line",
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Archery Units"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Teutonic Knight": {
+   "line": "Teutonic Knight",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "melee units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Teutonic Knight": {
+   "line": "Teutonic Knight",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "melee units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Ibirapema Warrior": {
+   "line": "Ibirapema Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Foot Archers at long range"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Ibirapema Warrior": {
+   "line": "Ibirapema Warrior",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Foot Archers at long range"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Blackwood Archer": {
+   "line": "Blackwood Archer",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Blackwood Archer": {
+   "line": "Blackwood Archer",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Janissary": {
+   "line": "Janissary",
+   "group": "Gunpowder",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Skirmishers"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Gunners",
+    "Gunpowder Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Janissary": {
+   "line": "Janissary",
+   "group": "Gunpowder",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Skirmishers"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Gunners",
+    "Gunpowder Units",
+    "Unique Units"
+   ]
+  },
+  "Jarl": {
+   "line": "Jarl",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Jarl": {
+   "line": "Jarl",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Camel Riders",
+    "Monks"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Imperial Skirmisher": {
+   "line": "Skirmisher",
+   "group": "Archers",
+   "unique": false,
+   "weak_vs": [
+    "units at close range"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers",
+    "Spearman-line"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Skirmishers",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range"
+   ]
+  },
+  "Rattan Archer": {
+   "line": "Rattan Archer",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Skirmishers",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Archery Units",
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Rattan Archer": {
+   "line": "Rattan Archer",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Skirmishers",
+    "Siege Weapons"
+   ],
+   "strong_vs": [
+    "Archery Units",
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Berserk": {
+   "line": "Berserk",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Elite Berserk": {
+   "line": "Berserk",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Archery Units",
+    "Gunners"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Xianbei Raider": {
+   "line": "Xianbei Raider",
+   "group": "Cav. Archers",
+   "unique": true,
+   "weak_vs": [
+    "Skirmishers",
+    "Camel Riders"
+   ],
+   "strong_vs": [
+    "Infantry"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Cavalry",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Mounted Archers",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Tiger Cavalry": {
+   "line": "Tiger Cavalry",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Elite Tiger Cavalry": {
+   "line": "Tiger Cavalry",
+   "group": "Cavalry",
+   "unique": true,
+   "weak_vs": [
+    "Spearman-line"
+   ],
+   "strong_vs": [
+    "Ranged Soldiers"
+   ],
+   "member_of": [
+    "Cavalry",
+    "units at close range",
+    "melee units",
+    "Mounted Units",
+    "Unique Units"
+   ]
+  },
+  "Cao Cao": {
+   "line": "Cao Cao",
+   "group": "Other",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": []
+  },
+  "Jian Swordsman": {
+   "line": "Jian Swordsman",
+   "group": "Infantry",
+   "unique": true,
+   "weak_vs": [
+    "Militia-line"
+   ],
+   "strong_vs": [
+    "Archery Units"
+   ],
+   "member_of": [
+    "Infantry",
+    "units at close range",
+    "melee units",
+    "Unique Units"
+   ]
+  },
+  "Fire Archer": {
+   "line": "Fire Archer",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Skirmishers"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Elite Fire Archer": {
+   "line": "Fire Archer",
+   "group": "Archers",
+   "unique": true,
+   "weak_vs": [
+    "Cavalry",
+    "Skirmishers"
+   ],
+   "strong_vs": [
+    "Infantry",
+    "Siege Weapons"
+   ],
+   "member_of": [
+    "Archery Units",
+    "Ranged Soldiers",
+    "Ranged Soldiers at long range",
+    "Foot Archers",
+    "Foot Archers at long range",
+    "Unique Units"
+   ]
+  },
+  "Sun Jian": {
+   "line": "Sun Jian",
+   "group": "Other",
+   "unique": false,
+   "weak_vs": [],
+   "strong_vs": [],
+   "member_of": []
+  }
+ }
+}
