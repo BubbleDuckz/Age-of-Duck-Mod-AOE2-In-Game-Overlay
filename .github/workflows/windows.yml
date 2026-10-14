@@ -28,7 +28,7 @@ jobs:
       - name: Run tests with published fixtures
         run: >-
           python -m unittest -v
-          test_bundle test_screen_placement test_hud_regions
+          test_bundle test_update_release test_screen_placement test_hud_regions
           test_civ_coverage test_techtree_catalog
       - name: Build the Windows application
         run: python -m PyInstaller --noconfirm --clean AgeOfDuck.spec
