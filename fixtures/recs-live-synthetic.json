@@ -1,0 +1,27 @@
+{
+  "cls": 13,
+  "data": {
+    "found": true,
+    "player": {"id": 1001, "name": "Test Player"},
+    "accounts": [{"id": 1001}],
+    "ladders": [
+      {"id": 3, "highest": 1600},
+      {"id": 4, "highest": 1500},
+      {"id": 13, "highest": 1450},
+      {"id": 14, "highest": 1400}
+    ],
+    "live": {
+      "id": "synthetic-match-1",
+      "status": "ongoing",
+      "game": "AoE2",
+      "started": "2026-01-01T12:00:00Z",
+      "leaderboard": "RM 1v1",
+      "rms": "Arabian Desert",
+      "diplomacy": "Teams",
+      "players": [
+        {"id": 1001, "name": "Test Player", "civilization": "Cumans", "rating": 1500, "team": 1, "color_hex": "#0000FF"},
+        {"id": 1002, "name": "Test Opponent", "civilization": "Mongols", "rating": 1400, "team": 2, "color_hex": "#FF0000"}
+      ]
+    }
+  }
+}

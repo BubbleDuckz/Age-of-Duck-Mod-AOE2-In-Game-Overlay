@@ -1,0 +1,19 @@
+{
+  "cls": 13,
+  "data": {
+    "found": true,
+    "player": {"id": 9001, "name": "Offline Test Player"},
+    "accounts": [{"id": 9001}],
+    "ladders": [],
+    "live": null,
+    "history": [
+      {
+        "id": "synthetic-past-match",
+        "status": "complete",
+        "game": "AoE2",
+        "started": "2025-12-31T12:00:00Z",
+        "players": [{"id": 9001, "name": "Offline Test Player"}]
+      }
+    ]
+  }
+}

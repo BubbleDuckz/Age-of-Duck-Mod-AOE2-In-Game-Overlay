@@ -45,7 +45,11 @@ python -m venv .venv
 .venv\Scripts\python AgeofDuck.py
 ```
 
-To build the executable, run `setup_env.bat` once and then `make EXE.bat`. To build the installer, install [Inno Setup](https://jrsoftware.org/isinfo.php) and compile `installer/AgeOfDuckInstaller.iss`. Run a test with, for example, `python -m unittest test_build_orders`. Some tests need large game screenshots or real player data, which aren't included, so those will fail until you supply your own fixtures.
+To build the executable, run `setup_env.bat` once and then `make EXE.bat`. To build the installer, install [Inno Setup](https://jrsoftware.org/isinfo.php) and compile `installer/AgeOfDuckInstaller.iss`. Run a test with, for example, `python -m unittest test_build_orders`. Some vision tests need large game screenshots, which aren't included, so those will fail until you supply your own fixtures.
+
+The live-match provider tests use fabricated profiles included in `fixtures/`;
+they need no personal player data or network connection. After installing the
+dependencies, run them with `python -m unittest test_recs_provider`.
 
 ## Project layout
 
@@ -75,3 +79,4 @@ The source code is released under the [MIT License](LICENSE). Game artwork and s
 - Civilisation and unit information derived in part from the [Age of Empires Wiki](https://ageofempires.fandom.com/wiki/Category:Age_of_Empires_II) (CC BY-SA).
 
 Age of Duck is an unofficial fan project, created under Microsoft's [Game Content Usage Rules](https://www.xbox.com/en-US/developers/rules). It is not endorsed by or affiliated with Microsoft, Xbox Game Studios or World's Edge. Age of Empires II © Microsoft Corporation.
+
