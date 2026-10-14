@@ -28,13 +28,15 @@ class Reminder:
     def forget(self):
         self.__init__()
 
-    def step(self, obs, now, cooldown=1, validated=False):
+    def step(self, obs, now, cooldown=1, validated=False, manual_total=None):
         if obs.session and obs.session != self.session:
             self.forget()
             self.session = obs.session
+        if manual_total is not None:
+            self.total = manual_total
         safe = obs.foreground and obs.gameplay and obs.advancing and obs.confident
         count_safe = obs.foreground and (obs.paused or (obs.gameplay and obs.advancing))
-        if count_safe and obs.selection_verified and obs.selected_tcs is not None and obs.selected_tcs >= 1 and (self.total is None or obs.selected_tcs > 1):
+        if manual_total is None and count_safe and obs.selection_verified and obs.selected_tcs is not None and obs.selected_tcs >= 1 and (self.total is None or obs.selected_tcs > 1):
             self.total = obs.selected_tcs
             self.learned_at = now
         if not safe:
@@ -59,3 +61,4 @@ class Reminder:
         if cue:
             self.last_cue = now
         return 'Check TC queues', cue, 'Possible queue shortfall; remembered count may be stale'
+

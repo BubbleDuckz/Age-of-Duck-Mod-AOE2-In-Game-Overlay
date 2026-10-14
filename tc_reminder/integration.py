@@ -179,6 +179,9 @@ class TCController(QObject):
                 r['match_pending']=self.continuity.pending is not None
                 if r['new_match']:
                     self.reminder.forget();self.selection=SelectionEvidence();self.housing=StableHousingReminder()
+                    self.build_events=BuildHouseEvents();self.voice.reset();self.voice_event=None
+                    self.blocked_since=None;self.blocked_last=0
+                    self.housing_state='';self.idle_alert=False
                 if self.continuity.pending is not None:r['confident']=False
                 self.frame_observed.emit(game,r,stamp)
                 if self.observer_enabled:
@@ -188,16 +191,19 @@ class TCController(QObject):
                 obs=Observation(busy=r['busy_upper_bound'],selected_tcs=r['selected_tcs'],selection_verified=verified,
                     foreground=True,gameplay=r['gameplay'],paused=r['context']=='pause',advancing=r['advancing'],
                     confident=r['confident'],housed=bool(r['housed']),session=game[1],reason=r['reason'])
-                if self.manual_tcs:self.reminder.total=self.manual_tcs
-                text,_,reason=self.reminder.step(obs,now,validated=self.detector.alerts_validated)
-                if self.manual_tcs:self.reminder.total=self.manual_tcs
-                housing=self.housing.update(r.get('population'),r['gameplay'] and r['advancing'] and self.continuity.pending is None,now)
+                text,_,reason=self.reminder.step(obs,now,validated=self.detector.alerts_validated,
+                    manual_total=self.manual_tcs or None)
+                housing_safe=r['gameplay'] and r['advancing'] and self.continuity.pending is None
+                housing=self.housing.update(r.get('population'),housing_safe,now)
                 self.build_events.update(r.get('population'),housing,self.housing.seen>=2)
                 self.voice_event=self.build_events.event if housing=='Build House' else None
                 # The population counter is not always readable (other UI scales, the flashing
                 # red/yellow box). The blocked queue icons are independent evidence, so a Town
                 # Centre that has been blocked for a second still triggers the Housed warning.
-                housing=housing or self.queue_blocked(text=='Population blocked' or bool(r.get('pop_flash')),now)
+                if housing_safe:
+                    housing=housing or self.queue_blocked(text=='Population blocked' or bool(r.get('pop_flash')),now)
+                else:
+                    self.blocked_since=None;self.blocked_last=0
                 self.housing_state=housing;self.idle_alert=text=='Check TC queues'
                 self.latest_state=dict(match_id=r["match_id"],new_match=r["new_match"],villagers=r.get("villagers"),build_orders_enabled=self.observer_enabled,population=r.get('population'),housing=housing,tc_alert=text,reason=reason,context=r['context'],advancing=r['advancing'],confident=r['confident'],remembered_tcs=self.reminder.total,active=r['busy_upper_bound'],voice_event=self.voice_event)
                 total=self.reminder.total;active=r['busy_upper_bound'];idle='?' if total is None else str(max(0,total-active))
@@ -232,3 +238,4 @@ class TCController(QObject):
             self.last_frame=now;self.future=self.executor.submit(self.capture_frame,game,self.epoch)
     def close(self):
         self.closed=True;self.timer.stop();self.invalidate();self.executor.shutdown(wait=False,cancel_futures=True);self.panel.close()
+

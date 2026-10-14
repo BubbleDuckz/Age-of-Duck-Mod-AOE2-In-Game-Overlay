@@ -44,6 +44,11 @@ class RepeatingVoice:
         if self.active:self.play(None,0)
         self.active=False;self.next_due=None;self.pending_event=None;self.finishes=None
 
+    def reset(self):
+        """Start a new cue session; ordinary pauses must keep acknowledged events."""
+        self.stop()
+        self.last_event=None
+
 
 def choose_cue(voice,housing,idle,event,now):
     voice.advance(now)
@@ -51,3 +56,4 @@ def choose_cue(voice,housing,idle,event,now):
     if housing=='Build House' and event!=voice.last_event:
         return 'build-house.wav',event,True
     return 'idle.wav',None,idle
+
