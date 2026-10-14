@@ -10,7 +10,6 @@ import webbrowser
 from datetime import datetime, timezone
 
 import psutil
-import requests
 from PyQt5.QtCore import QCoreApplication, QEasingCurve, QPointF, QRectF, QStandardPaths, Qt, QTimer, QVariantAnimation, pyqtSignal, QObject
 from PyQt5.QtGui import QBrush, QColor, QFont, QIcon, QLinearGradient, QPainter, QPainterPath, QPen, QPixmap, QTextDocument, QCursor
 from PyQt5.QtNetwork import QLocalServer, QLocalSocket
@@ -37,7 +36,7 @@ if sys.platform == "win32":
 
 from tooltip import CivMatchupPanel
 from screen_placement import visible_position
-from update_release import select_update
+from update_io import startup_command, consume_completed_update
 
 
 ACCENT = "#A7F3D0"
@@ -157,19 +156,14 @@ def _save_setting(key, value, path):
 
 
 def get_app_startup_path():
-    return "AgeOfDuck", f'"{os.path.join(APP_DIR, "AgeOfDuck.exe")}"'
+    return "AgeOfDuck", startup_command(getattr(sys, "frozen", False), sys.executable, os.path.join(APP_DIR, "AgeofDuck.py"))
 
 
 def set_app_startup(enable=True):
     if sys.platform != "win32":
         return
     app_name, exe_path = get_app_startup_path()
-    key = winreg.OpenKey(
-        winreg.HKEY_CURRENT_USER,
-        r"Software\Microsoft\Windows\CurrentVersion\Run",
-        0,
-        winreg.KEY_ALL_ACCESS,
-    )
+    key = winreg.CreateKey(winreg.HKEY_CURRENT_USER, r"Software\Microsoft\Windows\CurrentVersion\Run")
     if enable:
         winreg.SetValueEx(key, app_name, 0, winreg.REG_SZ, exe_path)
     else:
@@ -208,44 +202,6 @@ def is_another_instance_running(server_name="AgeOfDuckOverlaySingleton"):
     if not server.listen(server_name):
         return True
     return server
-
-
-def check_for_update():
-    try:
-        response = requests.get(GITHUB_API_LATEST_RELEASE, timeout=8)
-        response.raise_for_status()
-        return select_update(response.json(), CURRENT_VERSION)
-    except Exception as exc:
-        print("Update check failed:", exc)
-    return None, None
-
-
-def download_and_run_installer(installer_url, tray_icon):
-    if not installer_url:
-        tray_icon.showMessage("Update Error", "Installer URL not found.", QSystemTrayIcon.Critical)
-        return
-
-    try:
-        temp_installer = os.path.join(tempfile.gettempdir(), "AgeOfDuckInstaller.exe")
-        tray_icon.showMessage("Updating", "Downloading installer...", QSystemTrayIcon.Information)
-        with requests.get(installer_url, stream=True, timeout=60) as response:
-            response.raise_for_status()
-            with open(temp_installer, "wb") as f:
-                for chunk in response.iter_content(8192):
-                    if chunk:
-                        f.write(chunk)
-
-        log_path = os.path.join(tempfile.gettempdir(), "AgeOfDuck_Install.log")
-        params = f'/LOG="{log_path}" /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS'
-        open(UPDATE_FLAG_PATH, "w").close()
-        ctypes.windll.shell32.ShellExecuteW(None, "runas", temp_installer, params, None, 1)
-        tray_icon.showMessage(
-            "Updating",
-            "Installer launched. The app will close and restart automatically.",
-            QSystemTrayIcon.Information,
-        )
-    except Exception as exc:
-        tray_icon.showMessage("Update Error", str(exc), QSystemTrayIcon.Critical)
 
 
 def save_last_profile_id(profile_id):
@@ -1457,12 +1413,8 @@ def main():
     tray_icon = QSystemTrayIcon(QIcon(resource_path("duck.png")), parent=app)
     tray_icon.setToolTip("Age of Duck")
 
-    if os.path.exists(UPDATE_FLAG_PATH):
+    if consume_completed_update(UPDATE_FLAG_PATH, CURRENT_VERSION):
         tray_icon.showMessage("Update complete", "Age of Duck was updated successfully.", QSystemTrayIcon.Information)
-        try:
-            os.remove(UPDATE_FLAG_PATH)
-        except Exception:
-            pass
 
     settings = SettingsWindow()
     overlay = Overlay(tray_icon)
@@ -1492,19 +1444,6 @@ def main():
     def toggle_startup():
         set_app_startup(action_autostart.isChecked())
 
-    def on_check_updates():
-        latest, installer_url = check_for_update()
-        if latest:
-            answer = QMessageBox.question(
-                best_parent(),
-                "Update Available",
-                f"Version {latest} is available. Install now?",
-            )
-            if answer == QMessageBox.Yes:
-                download_and_run_installer(installer_url, tray_icon)
-        else:
-            QMessageBox.information(best_parent(), "No Update", "You have the latest version.")
-
     action_settings = QAction("Settings", app)
     action_find_id = QAction("Find my Profile ID", app)
     action_autostart = QAction("Start with Windows", app)
@@ -1520,7 +1459,10 @@ def main():
     action_settings.triggered.connect(open_settings)
     action_find_id.triggered.connect(show_profile_id_help)
     action_autostart.toggled.connect(toggle_startup)
-    action_check_updates.triggered.connect(on_check_updates)
+    from update_ui import UpdateController
+    update_controller = UpdateController(app, tray_icon, action_check_updates, best_parent,
+                                         GITHUB_API_LATEST_RELEASE, CURRENT_VERSION, UPDATE_FLAG_PATH)
+    action_check_updates.triggered.connect(update_controller.check)
     action_discord.triggered.connect(lambda: webbrowser.open("https://discord.gg/hWsa7KS9nw"))
     action_donate.triggered.connect(lambda: webbrowser.open("https://paypal.me/mywebdeveloper"))
     action_quit.triggered.connect(app.quit)
