@@ -1245,6 +1245,9 @@ class CivMatchupPanel(QWidget):
             usable = [u for u in chain if buildable is None or u in buildable]
             if not usable or name != usable[-1]:
                 continue        # show only the best upgrade of each line
+            from counter_rules import compatible_target
+            if not compatible_target(entry, info):
+                continue
             matched = [c for c in info.get("strong_vs", []) if c in targets]
             if not matched:
                 continue
@@ -1377,3 +1380,4 @@ class CivMatchupPanel(QWidget):
             elif isinstance(entry, str):
                 values.append(entry)
         return values
+
