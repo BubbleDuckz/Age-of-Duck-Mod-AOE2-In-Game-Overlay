@@ -218,6 +218,58 @@ class HudRegions:
         canvas.paste(part, (cx0 - round((box[0] - sx0) * scale), cy0 - round((box[1] - sy0) * scale)))
 
 
+def _text_cluster(mask, span):
+    """Bounding box of the line of text that overlaps `span` (x range) most; neighbours past a wider gap are ignored."""
+    count, _labels, stats, _ = cv2.connectedComponentsWithStats(mask.astype('uint8'), connectivity=8)
+    # Colon dots are small but bridge the gaps inside a clock, so keep them for clustering.
+    blobs = sorted((tuple(int(v) for v in row[:4]) for row in stats[1:count] if row[4] >= 2))
+    if not blobs:
+        return mask_bbox(mask)
+    gap_limit = max(b[3] for b in blobs) * 0.3
+    clusters, current = [], [blobs[0]]
+    for blob in blobs[1:]:
+        if blob[0] - max(b[0] + b[2] for b in current) > gap_limit:
+            clusters.append(current)
+            current = []
+        current.append(blob)
+    clusters.append(current)
+
+    def overlap(cluster):
+        return min(span[1], max(b[0] + b[2] for b in cluster)) - max(span[0], min(b[0] for b in cluster))
+
+    best = max(clusters, key=overlap)
+    return (min(b[0] for b in best), min(b[1] for b in best),
+            max(b[0] + b[2] for b in best), max(b[1] + b[3] for b in best))
+
+
+def snap_to_text(frame, box, key):
+    """Tighten a rough box (frame pixels) around the text it nearly covers.
+
+    Looks a little beyond the box so a slightly-off click still finds the number. Returns the
+    fitted box in frame pixels, or None when no text is found (the box is then left alone).
+    """
+    kind = REGIONS[key]['mask']
+    if kind is None:
+        return None
+    x0, y0, x1, y1 = (int(round(v)) for v in box)
+    reach_x = max(6, int((x1 - x0) * 0.35))
+    reach_y = max(5, int((y1 - y0) * 0.6))
+    sx0, sy0 = max(0, x0 - reach_x), max(0, y0 - reach_y)
+    sx1, sy1 = min(frame.width, x1 + reach_x), min(frame.height, y1 + reach_y)
+    if sx1 - sx0 < 4 or sy1 - sy0 < 4:
+        return None
+    mask = text_mask(frame.crop((sx0, sy0, sx1, sy1)), kind)
+    if int(mask.sum()) < 8:
+        return None
+    found = number_run(mask) if key == 'villagers' else _text_cluster(mask, (x0 - sx0, x1 - sx0))
+    if not found:
+        return None
+    bx0, by0, bx1, by1 = found
+    pad = 2
+    return (max(0, sx0 + bx0 - pad), max(0, sy0 + by0 - pad),
+            min(frame.width, sx0 + bx1 + pad), min(frame.height, sy0 + by1 + pad))
+
+
 def describe(raw, boxes, detector, villager_reader):
     """Human-readable result of reading each box, for the set-up screen."""
     regions = HudRegions()

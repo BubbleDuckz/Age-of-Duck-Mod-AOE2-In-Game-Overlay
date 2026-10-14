@@ -47,7 +47,7 @@ PANEL_A = (18, 29, 40, 192)
 PANEL_B = (28, 43, 59, 180)
 BORDER_RGBA = (255, 255, 255, 52)
 
-CURRENT_VERSION = "2.0.0"
+CURRENT_VERSION = "2.0.1"
 POLL_INTERVAL = 15
 MAX_LIVE_AGE_MINUTES = 180
 DEFAULT_FONT_SIZE = 9
@@ -121,6 +121,18 @@ def load_peak_expanded(path=OVERLAY_SETTINGS_FILE):
 
 def save_peak_expanded(expanded, path=OVERLAY_SETTINGS_FILE):
     _save_setting("peak_expanded", bool(expanded), path)
+
+
+def load_hide_own_team(path=OVERLAY_SETTINGS_FILE):
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            return bool(json.load(handle).get("hide_own_team", False))
+    except Exception:
+        return False
+
+
+def save_hide_own_team(hidden, path=OVERLAY_SETTINGS_FILE):
+    _save_setting("hide_own_team", bool(hidden), path)
 
 
 def save_scale(scale_factor, path=OVERLAY_SETTINGS_FILE):
@@ -695,16 +707,74 @@ class BotIcon(QWidget):
 
 
 class TeamDivider(QWidget):
-    """Slim 'VS' rule drawn between opposing teams."""
+    """Slim 'VS' rule drawn between opposing teams.
+
+    When it borders the player's own team it also carries a small chevron that hides / shows that team.
+    """
+
+    toggled = pyqtSignal()
+    BUTTON_WIDTH = 26
 
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setAttribute(Qt.WA_TransparentForMouseEvents)
+        self.setMouseTracking(True)
+        self.collapse_dir = None     # None: no button, 'up' / 'down': side of the strip the own team is on
+        self.team_hidden = False
+        self._hover = False
         self.set_divider_height(12)
 
     def set_divider_height(self, height):
         self.setFixedHeight(height)
         self.update()
+
+    def set_collapse(self, direction, hidden):
+        self.collapse_dir = direction
+        self.team_hidden = bool(hidden)
+        self.setToolTip("" if not direction else ("Show your team" if hidden else "Hide your team"))
+        if not direction:
+            self._hover = False
+            self.unsetCursor()
+        self.update()
+
+    def _button_rect(self):
+        return QRectF(self.width() - self.BUTTON_WIDTH - 6, 0, self.BUTTON_WIDTH, self.height())
+
+    def mouseMoveEvent(self, event):
+        over = bool(self.collapse_dir) and self._button_rect().contains(QPointF(event.pos()))
+        if over != self._hover:
+            self._hover = over
+            self.setCursor(Qt.PointingHandCursor if over else Qt.ArrowCursor)
+            self.update()
+
+    def leaveEvent(self, event):
+        if self._hover:
+            self._hover = False
+            self.unsetCursor()
+            self.update()
+
+    def mousePressEvent(self, event):
+        if event.button() == Qt.LeftButton and self.collapse_dir and self._button_rect().contains(QPointF(event.pos())):
+            self.toggled.emit()
+        else:
+            event.ignore()
+
+    def _paint_button(self, painter, rect):
+        button = self._button_rect()
+        if self._hover:
+            painter.setPen(Qt.NoPen)
+            painter.setBrush(QColor(255, 255, 255, 30))
+            painter.drawRoundedRect(button.adjusted(3, 1, -3, -1), 4, 4)
+        tone = QColor(238, 246, 255) if self._hover else QColor(159, 179, 200)
+        # '^' folds the team above the strip away; once folded it flips to 'v' to bring it back.
+        up = (self.collapse_dir == "up") != self.team_hidden
+        size = max(2.6, rect.height() * 0.26)
+        cx, cy = button.center().x(), button.center().y()
+        sign = -1 if up else 1
+        painter.setPen(QPen(tone, 1.7, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))
+        painter.setBrush(Qt.NoBrush)
+        painter.drawPolyline(QPointF(cx - size * 1.5, cy - sign * size * 0.6),
+                             QPointF(cx, cy + sign * size * 0.6),
+                             QPointF(cx + size * 1.5, cy - sign * size * 0.6))
 
     def paintEvent(self, event):
         painter = QPainter(self)
@@ -721,7 +791,8 @@ class TeamDivider(QWidget):
         left_end = rect.width() / 2.0 - text_w / 2.0 - gap
         right_start = rect.width() / 2.0 + text_w / 2.0 + gap
         margin = 10
-        for x0, x1, fade_from_edge in ((margin, left_end, True), (right_start, rect.width() - margin, False)):
+        right_end = rect.width() - margin - (self.BUTTON_WIDTH + 2 if self.collapse_dir else 0)
+        for x0, x1, fade_from_edge in ((margin, left_end, True), (right_start, right_end, False)):
             grad = QLinearGradient(x0, 0, x1, 0)
             edge, inner = (0, 90) if fade_from_edge else (90, 0)
             grad.setColorAt(0, QColor(255, 255, 255, edge))
@@ -730,6 +801,8 @@ class TeamDivider(QWidget):
             painter.drawLine(int(x0), int(mid), int(x1), int(mid))
         painter.setPen(QColor(159, 179, 200, 210))
         painter.drawText(rect, Qt.AlignCenter, "VS")
+        if self.collapse_dir:
+            self._paint_button(painter, rect)
 
 
 class PlayerRow(QFrame):
@@ -837,6 +910,8 @@ class Overlay(QWidget):
         self.player_civ = None
         self.test_mode_active = False
         self._peak_expanded = load_peak_expanded()
+        self.hide_own_team = load_hide_own_team()
+        self._last_layout = ([], True, 0)
         self._peak_progress = 1.0 if self._peak_expanded else 0.0
         self._peak_full_width = 40
 
@@ -1009,6 +1084,7 @@ class Overlay(QWidget):
         self.team_dividers = []
         for _ in range(8):
             divider = TeamDivider()
+            divider.toggled.connect(self.toggle_own_team)
             divider.hide()
             self.team_dividers.append(divider)
             self.rows_layout.addWidget(divider)
@@ -1217,6 +1293,7 @@ class Overlay(QWidget):
             team_colors[team_id] = TEAM_COLORS[len(team_colors) % len(TEAM_COLORS)]
         self.current_players = flat
         self.player_civ = self._find_player_civ(flat)
+        self._last_layout = (flat, ffa, len(teams))
 
         for index, row in enumerate(self.player_rows):
             if index < len(flat):
@@ -1229,10 +1306,43 @@ class Overlay(QWidget):
             )
             row.set_team_color(None if ffa or index >= len(flat) or len(teams) < 2 else team_colors[flat[index].get("team")])
 
+        self._apply_own_team_visibility()
         self.sync_player_columns()
         if self._aoe2_running:
             self.show()
         self.adjustSize()
+
+    def toggle_own_team(self):
+        self.hide_own_team = not self.hide_own_team
+        save_hide_own_team(self.hide_own_team)
+        self._apply_own_team_visibility()
+        self.sync_player_columns()
+        self.adjustSize()
+
+    def _apply_own_team_visibility(self):
+        """Put the hide / show chevron on the strip next to the player's team and fold that team away if asked."""
+        flat, ffa, team_count = getattr(self, "_last_layout", ([], True, 0))
+        for divider in self.team_dividers:
+            divider.set_collapse(None, False)
+        for i, row in enumerate(self.player_rows):
+            row.setVisible(i < len(flat))
+        own =[i for i, p in enumerate(flat) if p.get("is_self")]
+        if ffa or team_count < 2 or not own:
+            return
+        own_team = flat[own[0]].get("team")
+        members = [i for i, p in enumerate(flat) if p.get("team") == own_team]
+        first, last = members[0], members[-1]
+        # Prefer the strip above the team (team sits below it); the first team only has one below it.
+        if first > 0:
+            divider_index, direction = first, "down"
+        elif last + 1 < len(flat):
+            divider_index, direction = last + 1, "up"
+        else:
+            return
+        self.team_dividers[divider_index].set_collapse(direction, self.hide_own_team)
+        if self.hide_own_team:
+            for i in members:
+                self.player_rows[i].hide()
 
     def select_player(self, player):
         civ = player.get("civ")
@@ -1252,10 +1362,12 @@ class Overlay(QWidget):
         self._set_map_text("")
         self.current_players = []
         self.player_civ = None
+        self._last_layout = ([], True, 0)
         for row in self.player_rows:
             row.clear()
         for divider in self.team_dividers:
             divider.hide()
+            divider.set_collapse(None, False)
         self.matchup_panel.clear_selection()
         self.sync_player_columns()
         if self._aoe2_running:
@@ -1479,4 +1591,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

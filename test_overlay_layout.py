@@ -21,7 +21,8 @@ PLAYERS = [
 class OverlayLayoutTests(unittest.TestCase):
     def make_overlay(self):
         patcher = [patch('AgeofDuck.threading.Thread.start'), patch('AgeofDuck.Overlay.restore_last_position'),
-                   patch('AgeofDuck.save_peak_expanded'), patch('AgeofDuck.load_peak_expanded', return_value=True)]
+                   patch('AgeofDuck.save_peak_expanded'), patch('AgeofDuck.load_peak_expanded', return_value=True),
+                   patch('AgeofDuck.save_hide_own_team'), patch('AgeofDuck.load_hide_own_team', return_value=False)]
         for p in patcher:
             p.start()
             self.addCleanup(p.stop)
@@ -31,6 +32,38 @@ class OverlayLayoutTests(unittest.TestCase):
         overlay.show()
         app.processEvents()
         return overlay
+
+    def test_hide_own_team_button(self):
+        overlay = self.make_overlay()
+        players = [dict(p, is_self=(p['name'] == 'A')) for p in PLAYERS]
+        overlay.update_overlay({}, players, 'Team Random Map', 'Arabia')
+        app.processEvents()
+        divider = overlay.team_dividers[2]
+        self.assertEqual(divider.collapse_dir, 'up')       # own team sits above the strip
+        self.assertEqual(sum(d.collapse_dir is not None for d in overlay.team_dividers), 1)
+        self.assertTrue(all(r.isVisible() for r in overlay.player_rows[:3]))
+        divider.toggled.emit()
+        app.processEvents()
+        self.assertEqual([r.isVisible() for r in overlay.player_rows[:3]], [False, False, True])
+        self.assertTrue(divider.isVisible() and divider.team_hidden)
+        divider.toggled.emit()
+        app.processEvents()
+        self.assertTrue(all(r.isVisible() for r in overlay.player_rows[:3]))
+
+    def test_hide_own_team_when_enemy_is_first_and_never_in_ffa(self):
+        overlay = self.make_overlay()
+        players = [dict(p, is_self=(p['name'] == 'C')) for p in PLAYERS]
+        overlay.update_overlay({}, players, 'Team Random Map', 'Arabia')
+        self.assertEqual(overlay.team_dividers[2].collapse_dir, 'down')
+        overlay.hide_own_team = True
+        overlay.update_overlay({}, players, 'Team Random Map', 'Arabia')
+        app.processEvents()
+        self.assertEqual([r.isVisible() for r in overlay.player_rows[:3]], [True, True, False])
+        ffa = [dict(name=f'P{i}', civ='Aztecs', rating=1500, peak=None, team=10 + i, is_self=(i == 0)) for i in range(4)]
+        overlay.update_overlay({'ffa': True}, ffa, 'Scenario', 'x')
+        app.processEvents()
+        self.assertTrue(all(d.collapse_dir is None for d in overlay.team_dividers))
+        self.assertTrue(all(r.isVisible() for r in overlay.player_rows[:4]))
 
     def test_abbreviations_are_unique_two_letter_codes(self):
         codes = list(CIV_ABBREVIATIONS.values())
