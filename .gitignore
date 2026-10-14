@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+installer-output/
+*.log
+pyinstaller.log
+
+# per-user runtime state
+ageofduck_settings.json
+preview-position.txt
+tc_reminder/tc-live-status.json
+speech-smoke/
+
+# personal test data
+fixtures/profile-14982384.json
+fixtures/profile-199325.json

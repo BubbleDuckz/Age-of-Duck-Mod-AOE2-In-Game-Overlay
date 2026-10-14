@@ -1,0 +1,12 @@
+{
+  "approved": true,
+  "fingerprint": "825a634c48f54ee7b73fa5a0927fb46d1b6074946d71cec7a6b12f842bb3ccab",
+  "scope": "User-requested TC allowlist: unmatched icons ignored. 43 tests and 15 screenshot cases pass. Tech-tree-derived Feudal/Castle/Loom/Town Watch/Wheelbarrow references are not live validated; misses may cause false reminders. Persistent status overlay native flags and foreground preservation checked. Population counter calibrated on local HUD samples; threshold/max-cap logic and 46 tests pass. Live housing audio not yet validated. Added actual Feudal queue crop and live Castle Age progress crop; both match as one active research box. Existing screenshot queue counts unchanged. Other age-progress appearances are not exhaustively validated. Actual Loom queue screenshot recognized as active research; existing screenshot queue counts unchanged. Actual Town Watch and Wheelbarrow queue crops recognized as active research; existing screenshot queue counts unchanged.",
+  "evidence": [
+    "validation-report.json",
+    "overlay-test-report.json",
+    "live-validation-report.json"
+  ],
+  "mute_default": true,
+  "resolution_validation": "Actual 3008x1692 screenshots: queues, population 4/10, 7/15 and independent 9/15; villager counts 3, 6, 8; paused single-TC panel. Other dimensions use height normalization and HUD anchor checks. Actual green Castle Age progress crop: one active research plus one waiting villager; resized screenshot queue tests pass at 1280x720, 1920x1080, 2560x1440, 3008x1692, 3840x2160, 3440x1440 and 1280x1024. These are queue-scaling tests, not live validation of every HUD configuration."
+}

@@ -1,0 +1,40 @@
+{
+  "__instructions": {
+    "purpose": "Editable notes shown when you click a player's civilization in Age of Duck.",
+    "format": "Add one entry per civilization name exactly as it appears in civ_data.json.",
+    "fields": {
+      "summary": "Short free-text overview.",
+      "typical_strategies": [
+        "List common openings, army plans, timings, or matchup notes."
+      ],
+      "notes": "Optional extra free-text notes."
+    }
+  },
+  "Armenians": {
+    "summary": "Infantry and naval civilization with early infantry tech access, Mule Cart economy, and strong mid-game pressure.",
+    "typical_strategies": [
+      "Early Spearman/Pikeman pressure because the line is available one Age earlier.",
+      "Composite Bowman and Halberdier mid-game pushes.",
+      "Water play with improved Galley-line pressure."
+    ],
+    "notes": "Replace or expand this text with your own matchup notes."
+  },
+  "Britons": {
+    "summary": "Archer civilization that commonly leans on ranged mass, safer Town Centers, and long-range late-game pressure.",
+    "typical_strategies": [
+      "Standard Archer into Crossbow timing.",
+      "Fast Castle into Crossbow/Bodkin pressure.",
+      "Longbowman or Arbalester late-game ranged control."
+    ],
+    "notes": ""
+  },
+  "Franks": {
+    "summary": "Cavalry civilization often built around strong Scout, Knight, and Castle Age pressure.",
+    "typical_strategies": [
+      "Scouts into Knights.",
+      "Fast Castle Knight pressure.",
+      "Throwing Axemen as a support option against infantry-heavy responses."
+    ],
+    "notes": ""
+  }
+}

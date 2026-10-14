@@ -1,0 +1,455 @@
+{
+  "size": [
+    2560,
+    1440
+  ],
+  "queue_pitch": 37.5,
+  "queue_height": 37,
+  "selection_visible_limit": 16,
+  "regions": {
+    "queue": [
+      0,
+      58,
+      825,
+      95
+    ],
+    "selection": [
+      298,
+      1278,
+      890,
+      1425
+    ],
+    "selection_command": [
+      15,
+      1270,
+      260,
+      1425
+    ],
+    "clock": [
+      850,
+      5,
+      914,
+      24
+    ],
+    "top_anchor": [
+      0,
+      0,
+      55,
+      55
+    ],
+    "bottom_anchor": [
+      2198,
+      1272,
+      2247,
+      1321
+    ],
+    "selection_single": [
+      285,
+      1270,
+      450,
+      1370
+    ]
+  },
+  "templates": [
+    {
+      "kind": "top_anchor",
+      "file": "templates/wood.png",
+      "source": "selected-three.png",
+      "crop": [
+        11,
+        12,
+        43,
+        30
+      ]
+    },
+    {
+      "kind": "bottom_anchor",
+      "file": "templates/compass.png",
+      "source": "selected-three.png",
+      "crop": [
+        2209,
+        1286,
+        2236,
+        1310
+      ]
+    },
+    {
+      "kind": "villager",
+      "file": "templates/female.png",
+      "source": "selected-three.png",
+      "crop": [
+        54,
+        61,
+        69,
+        87
+      ]
+    },
+    {
+      "kind": "villager",
+      "file": "templates/female-no-progress.png",
+      "source": "selected-three.png",
+      "crop": [
+        91,
+        61,
+        106,
+        87
+      ]
+    },
+    {
+      "kind": "villager",
+      "file": "templates/male.png",
+      "source": "provided.png",
+      "crop": [
+        17,
+        60,
+        30,
+        76
+      ]
+    },
+    {
+      "kind": "villager",
+      "file": "templates/male-progress.png",
+      "source": "selected-three.png",
+      "crop": [
+        20,
+        61,
+        31,
+        74
+      ]
+    },
+    {
+      "kind": "housed",
+      "file": "templates/housed-male.png",
+      "source": "housed-three.png",
+      "crop": [
+        18,
+        60,
+        32,
+        90
+      ]
+    },
+    {
+      "kind": "housed",
+      "file": "templates/housed-female.png",
+      "source": "housed-three.png",
+      "crop": [
+        55,
+        60,
+        69,
+        90
+      ]
+    },
+    {
+      "kind": "tc",
+      "file": "templates/tc-group.png",
+      "source": "selected-three.png",
+      "crop": [
+        319,
+        1287,
+        331,
+        1305
+      ]
+    },
+    {
+      "kind": "tc_command",
+      "file": "templates/town-bell.png",
+      "source": "selected-three.png",
+      "crop": [
+        216,
+        1379,
+        241,
+        1402
+      ]
+    },
+    {
+      "kind": "blocker",
+      "file": "templates/paused-label.png",
+      "source": "paused.png",
+      "crop": [
+        1169,
+        705,
+        1393,
+        729
+      ],
+      "binary": true
+    },
+    {
+      "kind": "blocker",
+      "file": "templates/menu-label.png",
+      "source": "menu.png",
+      "crop": [
+        1209,
+        502,
+        1353,
+        528
+      ]
+    },
+    {
+      "kind": "research",
+      "file": "templates/tc-research-left.png",
+      "source": "research-paused.png",
+      "crop": [
+        4,
+        61,
+        31,
+        77
+      ],
+      "label": "hand-cart"
+    },
+    {
+      "kind": "research",
+      "file": "templates/tc-research-middle.png",
+      "source": "research-paused.png",
+      "crop": [
+        41,
+        61,
+        68,
+        77
+      ],
+      "label": "town-patrol"
+    },
+    {
+      "kind": "research",
+      "file": "templates/imperial-age.png",
+      "source": "research-paused.png",
+      "crop": [
+        79,
+        61,
+        106,
+        78
+      ],
+      "label": "imperial-age"
+    },
+    {
+      "kind": "tc_single_title",
+      "label": "town-center-title",
+      "crop": [
+        293,
+        1280,
+        412,
+        1297
+      ],
+      "file": "templates/town-center-title.png",
+      "source": "research-one-tc.png",
+      "binary": true
+    },
+    {
+      "kind": "tc_single_portrait",
+      "label": "town-center-portrait",
+      "crop": [
+        299,
+        1309,
+        349,
+        1335
+      ],
+      "file": "templates/town-center-portrait.png",
+      "source": "research-one-tc.png",
+      "binary": false
+    },
+    {
+      "kind": "research_waiting",
+      "label": "hand-cart-waiting",
+      "crop": [
+        41,
+        61,
+        68,
+        77
+      ],
+      "file": "templates/hand-cart-waiting.png",
+      "source": "research-one-tc.png",
+      "binary": false
+    },
+    {
+      "kind": "research_waiting",
+      "label": "town-patrol-waiting",
+      "crop": [
+        79,
+        61,
+        106,
+        77
+      ],
+      "file": "templates/town-patrol-waiting.png",
+      "source": "research-one-tc.png",
+      "binary": false
+    },
+    {
+      "kind": "non_tc",
+      "label": "user-confirmed-cavalry",
+      "file": "templates/non-tc-cavalry.png",
+      "source": "cavalry-crop.png",
+      "crop": [
+        12,
+        61,
+        31,
+        78
+      ]
+    },
+    {
+      "kind": "research",
+      "label": "feudal-age",
+      "file": "templates/reference-feudal-age.png",
+      "source": "tc-tech-tree.png",
+      "crop": [
+        185,
+        189,
+        253,
+        257
+      ],
+      "transform": "resize 34x34 then crop [3,2,30,18]",
+      "reference_only": true
+    },
+    {
+      "kind": "research",
+      "label": "loom",
+      "file": "templates/reference-loom.png",
+      "source": "tc-tech-tree.png",
+      "crop": [
+        309,
+        190,
+        377,
+        258
+      ],
+      "transform": "resize 34x34 then crop [3,2,30,18]",
+      "reference_only": true
+    },
+    {
+      "kind": "research",
+      "label": "town-watch",
+      "file": "templates/reference-town-watch.png",
+      "source": "tc-tech-tree.png",
+      "crop": [
+        54,
+        380,
+        122,
+        448
+      ],
+      "transform": "resize 34x34 then crop [3,2,30,18]",
+      "reference_only": true
+    },
+    {
+      "kind": "research",
+      "label": "castle-age",
+      "file": "templates/reference-castle-age.png",
+      "source": "tc-tech-tree.png",
+      "crop": [
+        186,
+        380,
+        254,
+        448
+      ],
+      "transform": "resize 34x34 then crop [3,2,30,18]",
+      "reference_only": true
+    },
+    {
+      "kind": "research",
+      "label": "wheelbarrow",
+      "file": "templates/reference-wheelbarrow.png",
+      "source": "tc-tech-tree.png",
+      "crop": [
+        309,
+        380,
+        377,
+        448
+      ],
+      "transform": "resize 34x34 then crop [3,2,30,18]",
+      "reference_only": true
+    },
+    {
+      "kind": "housed",
+      "label": "housed-large-badge",
+      "file": "templates/housed-large-badge.png",
+      "source": "independent-housed.png",
+      "crop": [
+        23,
+        61,
+        33,
+        76
+      ]
+    },
+    {
+      "kind": "research",
+      "label": "imperial-progress",
+      "file": "templates/imperial-progress.png",
+      "source": "independent-housed.png",
+      "crop": [
+        41,
+        61,
+        68,
+        77
+      ]
+    },
+    {
+      "kind": "research",
+      "label": "feudal-age-live",
+      "file": "templates/feudal-live-clear.png",
+      "source": "feudal-user-crop.png",
+      "crop": [
+        4,
+        30,
+        31,
+        46
+      ]
+    },
+    {
+      "kind": "research",
+      "label": "castle-age-live-progress",
+      "file": "templates/castle-live-progress.png",
+      "source": "age-check-live.png",
+      "crop": [
+        4,
+        61,
+        31,
+        77
+      ]
+    },
+    {
+      "kind": "research",
+      "label": "loom-live",
+      "file": "templates/loom-live.png",
+      "source": "loom-user-crop.png",
+      "crop": [
+        4,
+        15,
+        31,
+        31
+      ]
+    },
+    {
+      "kind": "research",
+      "label": "town-watch-live",
+      "file": "templates/town-watch-live.png",
+      "source": "town-watch-user-crop.png",
+      "crop": [
+        4,
+        7,
+        31,
+        23
+      ]
+    },
+    {
+      "kind": "research",
+      "label": "wheelbarrow-live",
+      "file": "templates/wheelbarrow-live.png",
+      "source": "wheelbarrow-user-crop.png",
+      "crop": [
+        4,
+        4,
+        31,
+        20
+      ]
+    },
+    {
+      "kind": "research",
+      "label": "castle-age-green-progress",
+      "file": "templates/castle-green-progress.png",
+      "source": "castle-green-normalized.png",
+      "crop": [
+        4,
+        61,
+        31,
+        77
+      ]
+    }
+  ],
+  "provenance": "Manually inspected screen captures from this setup; no inferred world-object TC counts."
+}
