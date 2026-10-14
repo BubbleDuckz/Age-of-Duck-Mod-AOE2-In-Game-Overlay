@@ -16,6 +16,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 from PIL import Image
+from preference_io import valid_size
 
 CANVAS = (2560, 1440)
 ASPECT_TOLERANCE = 0.02
@@ -135,7 +136,9 @@ class HudRegions:
             data = json.loads(self.path.read_text(encoding='utf-8'))
             boxes = {k: tuple(float(v) for v in data['boxes'][k]) for k in ORDER}
             if all(len(b) == 4 and 0 <= b[0] < b[2] <= 1 and 0 <= b[1] < b[3] <= 1 for b in boxes.values()):
-                self.boxes, self.size = boxes, tuple(data.get('size') or ()) or None
+                size=data.get('size')
+                if size and not valid_size(size):return
+                self.boxes, self.size = boxes, tuple(size) if size else None
         except (OSError, ValueError, KeyError, TypeError):
             self.boxes, self.size = {}, None
 
