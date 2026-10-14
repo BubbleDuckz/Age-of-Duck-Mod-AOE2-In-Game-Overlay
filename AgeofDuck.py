@@ -9,7 +9,6 @@ import time
 import webbrowser
 from datetime import datetime, timezone
 
-import packaging.version
 import psutil
 import requests
 from PyQt5.QtCore import QCoreApplication, QEasingCurve, QPointF, QRectF, QStandardPaths, Qt, QTimer, QVariantAnimation, pyqtSignal, QObject
@@ -38,6 +37,7 @@ if sys.platform == "win32":
 
 from tooltip import CivMatchupPanel
 from screen_placement import visible_position
+from update_release import select_update
 
 
 ACCENT = "#A7F3D0"
@@ -202,13 +202,7 @@ def check_for_update():
     try:
         response = requests.get(GITHUB_API_LATEST_RELEASE, timeout=8)
         response.raise_for_status()
-        data = response.json()
-        latest = (data.get("tag_name") or "").lstrip("v")
-        if latest and packaging.version.parse(latest) > packaging.version.parse(CURRENT_VERSION):
-            for asset in data.get("assets", []):
-                name = asset.get("name", "").lower()
-                if "installer" in name or name.endswith("-setup.exe"):
-                    return latest, asset.get("browser_download_url")
+        return select_update(response.json(), CURRENT_VERSION)
     except Exception as exc:
         print("Update check failed:", exc)
     return None, None
@@ -1485,3 +1479,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
