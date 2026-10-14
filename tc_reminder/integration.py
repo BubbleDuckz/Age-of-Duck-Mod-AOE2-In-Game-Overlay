@@ -17,6 +17,7 @@ from .population import StableHousingReminder,BuildHouseEvents
 from .voice import RepeatingVoice,choose_cue
 
 from .panel import TCPanel
+from preference_io import read_object
 
 class TCController(QObject):
     frame_observed=pyqtSignal(object,object,float)
@@ -31,8 +32,7 @@ class TCController(QObject):
         self.last_diagnostic=0
         self.latest_state={}
         self.error=''
-        try:self.prefs=json.loads(self.settings_path.read_text())
-        except (OSError,ValueError):self.prefs={}
+        self.prefs=read_object(self.settings_path)
         self.view_visible=bool(self.prefs.get('view_visible',True))
         self.panel=TCPanel();self.panel.offset=self.prefs.get('position');self.main_overlay=main_overlay
         self.panel.position_changed.connect(self.save_position)
@@ -232,3 +232,4 @@ class TCController(QObject):
             self.last_frame=now;self.future=self.executor.submit(self.capture_frame,game,self.epoch)
     def close(self):
         self.closed=True;self.timer.stop();self.invalidate();self.executor.shutdown(wait=False,cancel_futures=True);self.panel.close()
+

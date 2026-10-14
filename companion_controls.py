@@ -6,6 +6,7 @@ from PyQt5.QtWidgets import QWidget,QHBoxLayout,QVBoxLayout,QPushButton,QLabel,Q
 from tc_reminder.voice import RepeatingVoice
 from tc_reminder import native
 from ui_bits import StatusLightButton,SpeakerButton
+from preference_io import voice_volume
 
 class ChevronButton(QPushButton):
     """Little triangle on the divider line: red ▲ folds the controls away, green ▼ brings them back."""
@@ -51,7 +52,7 @@ class CompanionControls(QWidget):
  def __init__(self,main,build,tc):
   super().__init__(main);self.build=build;self.tc=tc;self.main=main;self.control_game=None
   self.setStyleSheet('QPushButton:disabled {color:#65717d;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.06);}')
-  self.volume=max(0,min(100,int(tc.prefs.get('voice_volume',100))))
+  self.volume=voice_volume(tc.prefs.get('voice_volume',100))
   RepeatingVoice.volume_percent=self.volume
   root=QVBoxLayout(self);root.setContentsMargins(0,0,0,0);root.setSpacing(2)
   # Header: a hairline with a small red/green triangle in the middle; it folds the controls away.
@@ -151,3 +152,4 @@ class CompanionControls(QWidget):
   try:self.tc.settings_path.write_text(json.dumps(self.tc.prefs))
   except OSError:pass
  def toggle_mute(self):self.tc.mute.toggle()
+

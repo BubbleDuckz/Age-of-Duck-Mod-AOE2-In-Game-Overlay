@@ -5,6 +5,7 @@ from PyQt5.QtCore import Qt,QTimer,QPoint,pyqtSignal
 from PyQt5.QtGui import QCursor,QFont,QColor,QPainter,QPen,QLinearGradient
 from PyQt5.QtWidgets import QWidget,QVBoxLayout,QHBoxLayout,QLabel,QPushButton,QDialog,QListWidget,QMessageBox,QCheckBox,QApplication,QGraphicsDropShadowEffect,QFrame
 from build_order_core import load_order,Progress
+from preference_io import read_object
 from tc_reminder.voice import RepeatingVoice
 from tc_reminder import native
 from screen_placement import visible_position
@@ -37,8 +38,7 @@ class BuildOrders:
   for p in (self.assets/'BuildOrders').glob('*'):
    if p.is_file() and not (self.folder/p.name).exists():shutil.copy2(p,self.folder/p.name)
   self.pref_file=Path(app_data)/'build_orders_settings.json'
-  try:self.prefs=json.loads(self.pref_file.read_text())
-  except (OSError,ValueError):self.prefs={}
+  self.prefs=read_object(self.pref_file)
   self.view_visible=bool(self.prefs.get('view_visible',True));self.enabled=bool(self.prefs.get('enabled',False));self.muted=tc.mute.isChecked();self.order=None;self.progress=None;self.process=None;self.audio_busy=False;self.current_audio=None;self.deadline=None;self.last_frame=0;self.in_match=False;self.safe=False;self.count=None;self.session=None;self.match_id=None;self.status='Select a build order';self.voice=RepeatingVoice('');self.cache=None
   if not self.prefs.get('flow_list_layout'):
    self.prefs.pop('position',None);self.prefs['flow_list_layout']=True;self.save()
@@ -187,3 +187,4 @@ class BuildOrders:
   self.timer.stop();self.pause_audio();self.panel.close();self.spoken.close()
   if getattr(self,'selector',None) is not None:self.selector.close()
   if self.process and self.process.poll() is None:self.process.kill()
+
