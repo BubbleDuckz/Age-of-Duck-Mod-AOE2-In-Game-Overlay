@@ -607,6 +607,10 @@ class CivMatchupPanel(QWidget):
         self.units_db = load_json(self.units_db_path, {})
         catalog = load_json(os.path.join(self.assets_root, "techtree_data.json"), {})
         if catalog.get("civs") and catalog.get("units"):
+            from editable_catalog import apply_catalog_edits
+            catalog = apply_catalog_edits(
+                catalog, load_json(os.path.join(self.assets_root, "civ_data.json"), {}), self.civ_data,
+                load_json(os.path.join(self.assets_root, "units_db.json"), {}), self.units_db)
             self.civ_data = catalog["civs"]
             self.units_db = catalog["units"]
         self.counter_data = load_json(os.path.join(self.assets_root, "unit_counters_v2.json"), {})
@@ -1377,3 +1381,4 @@ class CivMatchupPanel(QWidget):
             elif isinstance(entry, str):
                 values.append(entry)
         return values
+
