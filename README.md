@@ -9,7 +9,7 @@ Click-for-counter, build-order coaching, Town Centre / housing alerts and live l
 **[Download](https://github.com/BubbleDuckz/Age-of-Duck-Mod-AOE2-In-Game-Overlay/releases/latest)** · **[Website & build-order library](https://ageofduck.com)** · **[Discord](https://discord.gg/hWsa7KS9nw)**
 
 <p align="center">
-  <img src="https://ageofduck.com/img/overlay-counters.webp" alt="Age of Duck overlay with a unit selected and counters shown" width="340">
+  <img src="docs/screenshots/overlay-counters.webp" alt="Age of Duck overlay in a 1v1: players and ELO, a Khmer Militia selected and the counters Khmer can build" width="340">
 </p>
 
 ## Features
