@@ -108,7 +108,7 @@ class BuildOrders:
    dialog.accept()
   use.clicked.connect(choose);listing.itemDoubleClicked.connect(lambda _item:choose());dialog.setWindowModality(Qt.NonModal);dialog.show();dialog.raise_();dialog.activateWindow()
  def load(self,path):
-  order=load_order(path);self.pause_audio();self.order=order;self.progress=Progress(order);self.prefs['selected']=Path(path).name;self.save();self.status='Waiting for villager count'
+  order=load_order(path);self.pause_audio();self.voice.reset();self.order=order;self.progress=Progress(order);self.prefs['selected']=Path(path).name;self.save();self.status='Waiting for villager count'
   if self.process and self.process.poll() is None:self.process.kill()
   payload=[dict(index=i,text=s.text) for i,s in enumerate(order.steps)];key=hashlib.sha256(json.dumps(payload).encode()).hexdigest()[:24]
   self.cache=self.folder/'.voice-cache'/key;self.cache.mkdir(parents=True,exist_ok=True);manifest=self.cache/'speech.json';manifest.write_text(json.dumps(payload),encoding='utf-8')
@@ -121,6 +121,7 @@ class BuildOrders:
   else:self.process=None
  def restart(self):
   self.pause_audio()
+  self.voice.reset()
   if self.progress:self.progress.reset()
   self.status='New game — waiting for villager count'
  def pause_audio(self,clear_visual=True):
@@ -187,3 +188,4 @@ class BuildOrders:
   self.timer.stop();self.pause_audio();self.panel.close();self.spoken.close()
   if getattr(self,'selector',None) is not None:self.selector.close()
   if self.process and self.process.poll() is None:self.process.kill()
+
