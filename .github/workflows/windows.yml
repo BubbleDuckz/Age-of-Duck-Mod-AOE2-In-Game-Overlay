@@ -1,0 +1,43 @@
+name: Windows checks
+
+on:
+  pull_request:
+  push:
+    branches: [Main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: windows-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests-and-package:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run tests with published fixtures
+        run: >-
+          python -m unittest -v
+          test_bundle test_screen_placement test_hud_regions
+          test_civ_coverage test_techtree_catalog
+      - name: Build the Windows application
+        run: python -m PyInstaller --noconfirm --clean AgeOfDuck.spec
+      - name: Check packaged runtime resources
+        run: python scripts/check_bundle.py dist/AgeOfDuck
+      - name: Upload package for manual Windows testing
+        uses: actions/upload-artifact@v4
+        with:
+          name: AgeOfDuck-windows-${{ github.sha }}
+          path: dist/AgeOfDuck/
+          if-no-files-found: error
+          retention-days: 7
