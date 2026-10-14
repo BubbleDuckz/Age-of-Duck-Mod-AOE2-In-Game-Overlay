@@ -38,6 +38,7 @@ CHAINS = [
     ["Fire Galley", "Fire Ship", "Fast Fire Ship"],
     ["Demolition Raft", "Demolition Ship", "Heavy Demo Ship"],
     ["Hulk", "War Hulk", "Carrack"],
+    ["Cannon Galleon", "Elite Cannon Galleon"],
     ["Composite Bowman", "E. Composite Bowman"],
 ]
 
@@ -45,6 +46,9 @@ NOT_COUNTER_UNITS = {
     "Villager", "Trade Cart", "Trade Cog", "Fishing Ship", "Transport Ship",
     "Liu Bei", "Cao Cao", "Sun Jian",
 }
+
+# These common units have no generic upgrade chain, but are not civilisation-unique.
+GENERIC_SINGLE_UNITS = {"Monk", "Hand Cannoneer", "Bombard Cannon", "Trebuchet", "Siege Tower", "Petard"}
 
 
 def first_sentence(text):
@@ -115,6 +119,7 @@ def group_for(tags):
 def main():
     catalog = json.loads((ROOT / "techtree_data.json").read_text(encoding="utf-8"))
     units = catalog["units"]
+    source_units = json.loads((ROOT / "techtree_source/data.json").read_text(encoding="utf-8"))['data']['Unit']
 
     line_of, line_members = {}, {}
     for chain in CHAINS:
@@ -188,7 +193,8 @@ def main():
     generic_lines = {chain[0] for chain in CHAINS}
 
     def is_unique(unit):
-        return line_of[unit] not in generic_lines and unit not in NOT_COUNTER_UNITS
+        return (line_of[unit] not in generic_lines and unit not in NOT_COUNTER_UNITS
+                and unit not in GENERIC_SINGLE_UNITS)
 
     camels = named("Camel Rider", "Heavy Camel Rider", "Imperial Camel Rider")
     membership = dict(classes)
@@ -198,7 +204,9 @@ def main():
         "Mounted Units": lambda unit: bool({"cavalry", "mounted_archer"} & tags[unit]) or camels(unit),
         "Gunpowder Units": tagged("gunner"),
         "Warships": tagged("ship"),
-        "Unique Units": is_unique,
+        # Samurai's unique-unit bonus targets armour class 19, not every civ-exclusive unit.
+        "Unique Units": lambda unit: any(a['Class']==19 for a in
+            source_units.get(str(units[unit]['id']),{}).get('Armours',[])),
     })
     member_of = {name: [label for label, predicate in membership.items() if predicate(name)] for name in units}
 
@@ -261,7 +269,8 @@ def main():
         if unmatched:
             audit[name] = unmatched
         out_units[name] = {"line": line_of[name], "group": group_for(tags[name]), "unique": is_unique(name),
-                           "weak_vs": weak, "strong_vs": strong, "member_of": member_of[name]}
+                           "weak_vs": weak, "strong_vs": strong, "member_of": member_of[name],
+                           "attack_range": source_units.get(str(unit['id']),{}).get('Range',0)}
 
     result = {
         "metadata": {
@@ -285,3 +294,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

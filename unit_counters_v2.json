@@ -35,6 +35,7 @@
   "Fire Galley",
   "Demolition Raft",
   "Hulk",
+  "Cannon Galleon",
   "Composite Bowman"
  ],
  "lines": {
@@ -127,6 +128,10 @@
    "War Hulk",
    "Carrack"
   ],
+  "Cannon Galleon": [
+   "Cannon Galleon",
+   "Elite Cannon Galleon"
+  ],
   "Composite Bowman": [
    "Composite Bowman",
    "E. Composite Bowman"
@@ -180,10 +185,6 @@
   ],
   "Siege Elephant": [
    "Siege Elephant"
-  ],
-  "Cannon Galleon": [
-   "Cannon Galleon",
-   "Elite Cannon Galleon"
   ],
   "Ratha": [
    "Ratha",
@@ -797,6 +798,10 @@
     "Heavy Scorpion"
    ],
    [
+    "Cannon Galleon",
+    "Elite Cannon Galleon"
+   ],
+   [
     "Armored Elephant"
    ],
    [
@@ -805,10 +810,6 @@
    ],
    [
     "Bombard Cannon"
-   ],
-   [
-    "Cannon Galleon",
-    "Elite Cannon Galleon"
    ],
    [
     "Catapult Galleon"
@@ -1929,7 +1930,8 @@
     "Ranged Soldiers at long range",
     "Foot Archers",
     "Foot Archers at long range"
-   ]
+   ],
+   "attack_range": 4
   },
   "Crossbowman": {
    "line": "Archer",
@@ -1949,7 +1951,8 @@
     "Ranged Soldiers at long range",
     "Foot Archers",
     "Foot Archers at long range"
-   ]
+   ],
+   "attack_range": 5
   },
   "Arbalester": {
    "line": "Archer",
@@ -1969,7 +1972,8 @@
     "Ranged Soldiers at long range",
     "Foot Archers",
     "Foot Archers at long range"
-   ]
+   ],
+   "attack_range": 5
   },
   "Skirmisher": {
    "line": "Skirmisher",
@@ -1987,7 +1991,8 @@
     "Skirmishers",
     "Ranged Soldiers",
     "Ranged Soldiers at long range"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Skirmisher": {
    "line": "Skirmisher",
@@ -2005,7 +2010,8 @@
     "Skirmishers",
     "Ranged Soldiers",
     "Ranged Soldiers at long range"
-   ]
+   ],
+   "attack_range": 5
   },
   "Cavalry Archer": {
    "line": "Cavalry Archer",
@@ -2024,7 +2030,8 @@
     "Ranged Soldiers at long range",
     "Mounted Archers",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Militia": {
    "line": "Militia",
@@ -2043,7 +2050,8 @@
     "Infantry",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Man-at-Arms": {
    "line": "Militia",
@@ -2062,7 +2070,8 @@
     "Infantry",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Long Swordsman": {
    "line": "Militia",
@@ -2081,7 +2090,8 @@
     "Infantry",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Two-Handed Swordsman": {
    "line": "Militia",
@@ -2100,7 +2110,8 @@
     "Infantry",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Champion": {
    "line": "Militia",
@@ -2119,7 +2130,8 @@
     "Infantry",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Spearman": {
    "line": "Spearman",
@@ -2137,7 +2149,8 @@
     "Infantry",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Pikeman": {
    "line": "Spearman",
@@ -2155,7 +2168,8 @@
     "Infantry",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Halberdier": {
    "line": "Spearman",
@@ -2173,7 +2187,8 @@
     "Infantry",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Scout Cavalry": {
    "line": "Scout Cavalry",
@@ -2192,7 +2207,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Light Cavalry": {
    "line": "Scout Cavalry",
@@ -2211,7 +2227,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Knight": {
    "line": "Knight",
@@ -2231,7 +2248,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Cavalier": {
    "line": "Knight",
@@ -2251,7 +2269,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Battering Ram": {
    "line": "Battering Ram",
@@ -2263,7 +2282,8 @@
    "strong_vs": [],
    "member_of": [
     "Siege Weapons"
-   ]
+   ],
+   "attack_range": 0
   },
   "Capped Ram": {
    "line": "Battering Ram",
@@ -2275,7 +2295,8 @@
    "strong_vs": [],
    "member_of": [
     "Siege Weapons"
-   ]
+   ],
+   "attack_range": 0
   },
   "Siege Ram": {
    "line": "Battering Ram",
@@ -2287,7 +2308,8 @@
    "strong_vs": [],
    "member_of": [
     "Siege Weapons"
-   ]
+   ],
+   "attack_range": 0
   },
   "Mangonel": {
    "line": "Mangonel",
@@ -2300,7 +2322,8 @@
    "member_of": [
     "Siege Weapons",
     "Mangonel-line"
-   ]
+   ],
+   "attack_range": 7
   },
   "Onager": {
    "line": "Mangonel",
@@ -2313,7 +2336,8 @@
    "member_of": [
     "Siege Weapons",
     "Mangonel-line"
-   ]
+   ],
+   "attack_range": 8
   },
   "Scorpion": {
    "line": "Scorpion",
@@ -2327,7 +2351,8 @@
    "member_of": [
     "Siege Weapons",
     "Scorpions"
-   ]
+   ],
+   "attack_range": 7
   },
   "Heavy Scorpion": {
    "line": "Scorpion",
@@ -2341,20 +2366,21 @@
    "member_of": [
     "Siege Weapons",
     "Scorpions"
-   ]
+   ],
+   "attack_range": 7
   },
   "Siege Tower": {
    "line": "Siege Tower",
    "group": "Siege",
-   "unique": true,
+   "unique": false,
    "weak_vs": [
     "melee units"
    ],
    "strong_vs": [],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 0
   },
   "Fishing Ship": {
    "line": "Fishing Ship",
@@ -2364,7 +2390,8 @@
    "strong_vs": [],
    "member_of": [
     "Warships"
-   ]
+   ],
+   "attack_range": 0
   },
   "Transport Ship": {
    "line": "Transport Ship",
@@ -2374,7 +2401,8 @@
    "strong_vs": [],
    "member_of": [
     "Warships"
-   ]
+   ],
+   "attack_range": 0
   },
   "Fire Galley": {
    "line": "Fire Galley",
@@ -2389,7 +2417,8 @@
    "member_of": [
     "Fire Ships",
     "Warships"
-   ]
+   ],
+   "attack_range": 2.5
   },
   "Fire Ship": {
    "line": "Fire Galley",
@@ -2404,7 +2433,8 @@
    "member_of": [
     "Fire Ships",
     "Warships"
-   ]
+   ],
+   "attack_range": 2.5
   },
   "Galley": {
    "line": "Galley",
@@ -2420,7 +2450,8 @@
     "Galleys",
     "Galley-line",
     "Warships"
-   ]
+   ],
+   "attack_range": 5
   },
   "War Galley": {
    "line": "Galley",
@@ -2436,7 +2467,8 @@
     "Galleys",
     "Galley-line",
     "Warships"
-   ]
+   ],
+   "attack_range": 6
   },
   "Galleon": {
    "line": "Galley",
@@ -2452,7 +2484,8 @@
     "Galleys",
     "Galley-line",
     "Warships"
-   ]
+   ],
+   "attack_range": 7
   },
   "Hulk": {
    "line": "Hulk",
@@ -2467,7 +2500,8 @@
    "member_of": [
     "Hulk-line",
     "Warships"
-   ]
+   ],
+   "attack_range": 1
   },
   "War Hulk": {
    "line": "Hulk",
@@ -2482,7 +2516,8 @@
    "member_of": [
     "Hulk-line",
     "Warships"
-   ]
+   ],
+   "attack_range": 1
   },
   "Carrack": {
    "line": "Hulk",
@@ -2497,7 +2532,8 @@
    "member_of": [
     "Hulk-line",
     "Warships"
-   ]
+   ],
+   "attack_range": 1
   },
   "Demolition Raft": {
    "line": "Demolition Raft",
@@ -2510,7 +2546,8 @@
    "member_of": [
     "Demolition Ships",
     "Warships"
-   ]
+   ],
+   "attack_range": 0
   },
   "Demolition Ship": {
    "line": "Demolition Raft",
@@ -2523,7 +2560,8 @@
    "member_of": [
     "Demolition Ships",
     "Warships"
-   ]
+   ],
+   "attack_range": 0
   },
   "Heavy Demo Ship": {
    "line": "Demolition Raft",
@@ -2536,7 +2574,8 @@
    "member_of": [
     "Demolition Ships",
     "Warships"
-   ]
+   ],
+   "attack_range": 0
   },
   "Trade Cog": {
    "line": "Trade Cog",
@@ -2546,7 +2585,8 @@
    "strong_vs": [],
    "member_of": [
     "Warships"
-   ]
+   ],
+   "attack_range": 0
   },
   "Dromon": {
    "line": "Dromon",
@@ -2558,9 +2598,9 @@
    "strong_vs": [],
    "member_of": [
     "Siege Weapons",
-    "Warships",
-    "Unique Units"
-   ]
+    "Warships"
+   ],
+   "attack_range": 12
   },
   "Composite Bowman": {
    "line": "Composite Bowman",
@@ -2579,8 +2619,10 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Foot Archers",
-    "Foot Archers at long range"
-   ]
+    "Foot Archers at long range",
+    "Unique Units"
+   ],
+   "attack_range": 4
   },
   "E. Composite Bowman": {
    "line": "Composite Bowman",
@@ -2599,35 +2641,37 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Foot Archers",
-    "Foot Archers at long range"
-   ]
+    "Foot Archers at long range",
+    "Unique Units"
+   ],
+   "attack_range": 4
   },
   "Petard": {
    "line": "Petard",
    "group": "Siege",
-   "unique": true,
+   "unique": false,
    "weak_vs": [],
    "strong_vs": [],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 0
   },
   "Trebuchet": {
    "line": "Trebuchet",
    "group": "Siege",
-   "unique": true,
+   "unique": false,
    "weak_vs": [],
    "strong_vs": [],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 16
   },
   "Monk": {
    "line": "Monk",
    "group": "Monks",
-   "unique": true,
+   "unique": false,
    "weak_vs": [
     "Scout Cavalry-line",
     "Eagle Warriors",
@@ -2635,9 +2679,9 @@
    ],
    "strong_vs": [],
    "member_of": [
-    "Monks",
-    "Unique Units"
-   ]
+    "Monks"
+   ],
+   "attack_range": 9
   },
   "Warrior Priest": {
    "line": "Warrior Priest",
@@ -2654,7 +2698,8 @@
     "Monks",
     "Infantry",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Villager": {
    "line": "Villager",
@@ -2662,7 +2707,8 @@
    "unique": false,
    "weak_vs": [],
    "strong_vs": [],
-   "member_of": []
+   "member_of": [],
+   "attack_range": 0
   },
   "Trade Cart": {
    "line": "Trade Cart",
@@ -2670,7 +2716,8 @@
    "unique": false,
    "weak_vs": [],
    "strong_vs": [],
-   "member_of": []
+   "member_of": [],
+   "attack_range": 0
   },
   "Eagle Scout": {
    "line": "Eagle Scout",
@@ -2689,7 +2736,8 @@
     "Eagle Warriors",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Eagle Warrior": {
    "line": "Eagle Scout",
@@ -2708,7 +2756,8 @@
     "Eagle Warriors",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Eagle Warrior": {
    "line": "Eagle Scout",
@@ -2727,7 +2776,8 @@
     "Eagle Warriors",
     "units at close range",
     "melee units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Siege Onager": {
    "line": "Mangonel",
@@ -2740,7 +2790,8 @@
    "member_of": [
     "Siege Weapons",
     "Mangonel-line"
-   ]
+   ],
+   "attack_range": 8
   },
   "Fast Fire Ship": {
    "line": "Fire Galley",
@@ -2755,7 +2806,8 @@
    "member_of": [
     "Fire Ships",
     "Warships"
-   ]
+   ],
+   "attack_range": 2.5
   },
   "Catapult Galleon": {
    "line": "Catapult Galleon",
@@ -2767,9 +2819,9 @@
    "strong_vs": [],
    "member_of": [
     "Siege Weapons",
-    "Warships",
-    "Unique Units"
-   ]
+    "Warships"
+   ],
+   "attack_range": 12
   },
   "Jaguar Warrior": {
    "line": "Jaguar Warrior",
@@ -2787,7 +2839,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Jaguar Warrior": {
    "line": "Jaguar Warrior",
@@ -2805,7 +2858,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elephant Archer": {
    "line": "Elephant Archer",
@@ -2826,9 +2880,9 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Mounted Archers",
-    "Mounted Units",
-    "Unique Units"
-   ]
+    "Mounted Units"
+   ],
+   "attack_range": 4
   },
   "Elite Elephant Archer": {
    "line": "Elephant Archer",
@@ -2849,9 +2903,9 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Mounted Archers",
-    "Mounted Units",
-    "Unique Units"
-   ]
+    "Mounted Units"
+   ],
+   "attack_range": 4
   },
   "Battle Elephant": {
    "line": "Battle Elephant",
@@ -2869,7 +2923,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Battle Elephant": {
    "line": "Battle Elephant",
@@ -2887,7 +2942,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Armored Elephant": {
    "line": "Armored Elephant",
@@ -2898,9 +2954,9 @@
    ],
    "strong_vs": [],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 0
   },
   "Siege Elephant": {
    "line": "Siege Elephant",
@@ -2911,37 +2967,37 @@
    ],
    "strong_vs": [],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 0
   },
   "Cannon Galleon": {
    "line": "Cannon Galleon",
    "group": "Siege",
-   "unique": true,
+   "unique": false,
    "weak_vs": [
     "units at close range"
    ],
    "strong_vs": [],
    "member_of": [
     "Siege Weapons",
-    "Warships",
-    "Unique Units"
-   ]
+    "Warships"
+   ],
+   "attack_range": 13
   },
   "Elite Cannon Galleon": {
    "line": "Cannon Galleon",
    "group": "Siege",
-   "unique": true,
+   "unique": false,
    "weak_vs": [
     "units at close range"
    ],
    "strong_vs": [],
    "member_of": [
     "Siege Weapons",
-    "Warships",
-    "Unique Units"
-   ]
+    "Warships"
+   ],
+   "attack_range": 15
   },
   "Ratha": {
    "line": "Ratha",
@@ -2962,7 +3018,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Ratha": {
    "line": "Ratha",
@@ -2983,12 +3040,13 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Hand Cannoneer": {
    "line": "Hand Cannoneer",
    "group": "Gunpowder",
-   "unique": true,
+   "unique": false,
    "weak_vs": [
     "Ranged Soldiers"
    ],
@@ -3000,9 +3058,9 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Gunners",
-    "Gunpowder Units",
-    "Unique Units"
-   ]
+    "Gunpowder Units"
+   ],
+   "attack_range": 7
   },
   "Heavy Cavalry Archer": {
    "line": "Cavalry Archer",
@@ -3021,7 +3079,8 @@
     "Ranged Soldiers at long range",
     "Mounted Archers",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Genitour": {
    "line": "Genitour",
@@ -3039,7 +3098,8 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Genitour": {
    "line": "Genitour",
@@ -3057,7 +3117,8 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Hussar": {
    "line": "Scout Cavalry",
@@ -3076,7 +3137,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Camel Rider": {
    "line": "Camel Rider",
@@ -3096,7 +3158,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Heavy Camel Rider": {
    "line": "Camel Rider",
@@ -3116,12 +3179,13 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Bombard Cannon": {
    "line": "Bombard Cannon",
    "group": "Siege",
-   "unique": true,
+   "unique": false,
    "weak_vs": [
     "units at close range"
    ],
@@ -3129,9 +3193,9 @@
     "Siege Weapons"
    ],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 12
   },
   "Camel Archer": {
    "line": "Camel Archer",
@@ -3153,7 +3217,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Camel Archer": {
    "line": "Camel Archer",
@@ -3175,7 +3240,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Mounted Crossbowman": {
    "line": "Mounted Crossbowman",
@@ -3193,9 +3259,9 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Mounted Archers",
-    "Mounted Units",
-    "Unique Units"
-   ]
+    "Mounted Units"
+   ],
+   "attack_range": 4
   },
   "Houfnice": {
    "line": "Houfnice",
@@ -3208,9 +3274,9 @@
     "Siege Weapons"
    ],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 12
   },
   "Hussite Wagon": {
    "line": "Hussite Wagon",
@@ -3225,7 +3291,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Elite Hussite Wagon": {
    "line": "Hussite Wagon",
@@ -3240,7 +3307,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "H. Mounted Crossbowman": {
    "line": "Mounted Crossbowman",
@@ -3258,9 +3326,9 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Mounted Archers",
-    "Mounted Units",
-    "Unique Units"
-   ]
+    "Mounted Units"
+   ],
+   "attack_range": 4
   },
   "Longbowman": {
    "line": "Longbowman",
@@ -3280,7 +3348,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Elite Longbowman": {
    "line": "Longbowman",
@@ -3300,7 +3369,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Konnik": {
    "line": "Konnik",
@@ -3321,7 +3391,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Konnik": {
    "line": "Konnik",
@@ -3342,7 +3413,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Flemish Militia": {
    "line": "Flemish Militia",
@@ -3359,7 +3431,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Paladin": {
    "line": "Knight",
@@ -3379,7 +3452,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Coustillier": {
    "line": "Coustillier",
@@ -3399,7 +3473,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Coustillier": {
    "line": "Coustillier",
@@ -3419,7 +3494,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Arambai": {
    "line": "Arambai",
@@ -3434,7 +3510,8 @@
    ],
    "member_of": [
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Elite Arambai": {
    "line": "Arambai",
@@ -3449,7 +3526,8 @@
    ],
    "member_of": [
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Varangian Guard": {
    "line": "Varangian Guard",
@@ -3464,9 +3542,9 @@
    "member_of": [
     "Infantry",
     "units at close range",
-    "melee units",
-    "Unique Units"
-   ]
+    "melee units"
+   ],
+   "attack_range": 0
   },
   "E. Varangian Guard": {
    "line": "Varangian Guard",
@@ -3481,9 +3559,9 @@
    "member_of": [
     "Infantry",
     "units at close range",
-    "melee units",
-    "Unique Units"
-   ]
+    "melee units"
+   ],
+   "attack_range": 0
   },
   "Cataphract": {
    "line": "Cataphract",
@@ -3501,7 +3579,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Cataphract": {
    "line": "Cataphract",
@@ -3519,7 +3598,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Woad Raider": {
    "line": "Woad Raider",
@@ -3538,7 +3618,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Woad Raider": {
    "line": "Woad Raider",
@@ -3557,7 +3638,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Fire Lancer": {
    "line": "Fire Lancer",
@@ -3575,9 +3657,9 @@
     "Ranged Soldiers at long range",
     "Gunners",
     "Infantry",
-    "Gunpowder Units",
-    "Unique Units"
-   ]
+    "Gunpowder Units"
+   ],
+   "attack_range": 0
   },
   "Elite Fire Lancer": {
    "line": "Fire Lancer",
@@ -3595,9 +3677,9 @@
     "Ranged Soldiers at long range",
     "Gunners",
     "Infantry",
-    "Gunpowder Units",
-    "Unique Units"
-   ]
+    "Gunpowder Units"
+   ],
+   "attack_range": 0
   },
   "Rocket Cart": {
    "line": "Rocket Cart",
@@ -3608,9 +3690,9 @@
    ],
    "strong_vs": [],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 7
   },
   "Heavy Rocket Cart": {
    "line": "Rocket Cart",
@@ -3621,9 +3703,9 @@
    ],
    "strong_vs": [],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 8
   },
   "Dragon Ship": {
    "line": "Dragon Ship",
@@ -3636,9 +3718,9 @@
     "Galley-line"
    ],
    "member_of": [
-    "Warships",
-    "Unique Units"
-   ]
+    "Warships"
+   ],
+   "attack_range": 3
   },
   "Lou Chuan": {
    "line": "Lou Chuan",
@@ -3650,9 +3732,9 @@
    "strong_vs": [],
    "member_of": [
     "Siege Weapons",
-    "Warships",
-    "Unique Units"
-   ]
+    "Warships"
+   ],
+   "attack_range": 10
   },
   "Chu Ko Nu": {
    "line": "Chu Ko Nu",
@@ -3672,7 +3754,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Chu Ko Nu": {
    "line": "Chu Ko Nu",
@@ -3692,7 +3775,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Steppe Lancer": {
    "line": "Steppe Lancer",
@@ -3709,7 +3793,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 1
   },
   "Elite Steppe Lancer": {
    "line": "Steppe Lancer",
@@ -3726,7 +3811,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 1
   },
   "Kipchak": {
    "line": "Kipchak",
@@ -3747,7 +3833,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Kipchak": {
    "line": "Kipchak",
@@ -3768,7 +3855,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Longship": {
    "line": "Longship",
@@ -3779,9 +3867,9 @@
    ],
    "strong_vs": [],
    "member_of": [
-    "Warships",
-    "Unique Units"
-   ]
+    "Warships"
+   ],
+   "attack_range": 6
   },
   "Elite Longship": {
    "line": "Longship",
@@ -3792,9 +3880,9 @@
    ],
    "strong_vs": [],
    "member_of": [
-    "Warships",
-    "Unique Units"
-   ]
+    "Warships"
+   ],
+   "attack_range": 7
   },
   "Jomsviking": {
    "line": "Jomsviking",
@@ -3811,7 +3899,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Jomsviking": {
    "line": "Jomsviking",
@@ -3828,7 +3917,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Thirisadai": {
    "line": "Thirisadai",
@@ -3843,7 +3933,8 @@
    "member_of": [
     "Warships",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 7
   },
   "Urumi Swordsman": {
    "line": "Urumi Swordsman",
@@ -3860,7 +3951,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Urumi Swordsman": {
    "line": "Urumi Swordsman",
@@ -3877,7 +3969,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Shotel Warrior": {
    "line": "Shotel Warrior",
@@ -3894,7 +3987,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Shotel Warrior": {
    "line": "Shotel Warrior",
@@ -3911,7 +4005,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Throwing Axeman": {
    "line": "Throwing Axeman",
@@ -3929,7 +4024,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Elite Throwing Axeman": {
    "line": "Throwing Axeman",
@@ -3947,7 +4043,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Monaspa": {
    "line": "Monaspa",
@@ -3967,7 +4064,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Monaspa": {
    "line": "Monaspa",
@@ -3987,7 +4085,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Huskarl": {
    "line": "Huskarl",
@@ -4005,7 +4104,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Huskarl": {
    "line": "Huskarl",
@@ -4023,7 +4123,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Camel Scout": {
    "line": "Camel Scout",
@@ -4041,9 +4142,9 @@
     "Cavalry",
     "units at close range",
     "melee units",
-    "Mounted Units",
-    "Unique Units"
-   ]
+    "Mounted Units"
+   ],
+   "attack_range": 0
   },
   "Shrivamsha Rider": {
    "line": "Shrivamsha Rider",
@@ -4062,7 +4163,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "E. Shrivamsha Rider": {
    "line": "Shrivamsha Rider",
@@ -4081,7 +4183,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Chakram Thrower": {
    "line": "Chakram Thrower",
@@ -4099,7 +4202,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Elite Chakram Thrower": {
    "line": "Chakram Thrower",
@@ -4117,7 +4221,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Imperial Camel Rider": {
    "line": "Camel Rider",
@@ -4137,7 +4242,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Ghulam": {
    "line": "Ghulam",
@@ -4155,7 +4261,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Ghulam": {
    "line": "Ghulam",
@@ -4173,7 +4280,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Tarkan": {
    "line": "Tarkan",
@@ -4190,7 +4298,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Tarkan": {
    "line": "Tarkan",
@@ -4207,7 +4316,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Slinger": {
    "line": "Slinger",
@@ -4226,9 +4336,9 @@
     "Archery Units",
     "Skirmishers",
     "Ranged Soldiers",
-    "Ranged Soldiers at long range",
-    "Unique Units"
-   ]
+    "Ranged Soldiers at long range"
+   ],
+   "attack_range": 5
   },
   "Champi Scout": {
    "line": "Champi Scout",
@@ -4244,9 +4354,9 @@
    "member_of": [
     "Infantry",
     "units at close range",
-    "melee units",
-    "Unique Units"
-   ]
+    "melee units"
+   ],
+   "attack_range": 0
   },
   "Champi Runner": {
    "line": "Champi Runner",
@@ -4262,9 +4372,9 @@
    "member_of": [
     "Infantry",
     "units at close range",
-    "melee units",
-    "Unique Units"
-   ]
+    "melee units"
+   ],
+   "attack_range": 0
   },
   "Champi Warrior": {
    "line": "Champi Warrior",
@@ -4280,9 +4390,9 @@
    "member_of": [
     "Infantry",
     "units at close range",
-    "melee units",
-    "Unique Units"
-   ]
+    "melee units"
+   ],
+   "attack_range": 0
   },
   "Elite Champi Warrior": {
    "line": "Champi Warrior",
@@ -4298,9 +4408,9 @@
    "member_of": [
     "Infantry",
     "units at close range",
-    "melee units",
-    "Unique Units"
-   ]
+    "melee units"
+   ],
+   "attack_range": 0
   },
   "Kamayuk": {
    "line": "Kamayuk",
@@ -4319,7 +4429,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 1
   },
   "Elite Kamayuk": {
    "line": "Kamayuk",
@@ -4338,7 +4449,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 1
   },
   "Condottiero": {
    "line": "Condottiero",
@@ -4356,7 +4468,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Genoese Crossbowman": {
    "line": "Genoese Crossbowman",
@@ -4376,7 +4489,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Genoese Crossbowman": {
    "line": "Genoese Crossbowman",
@@ -4396,7 +4510,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Samurai": {
    "line": "Samurai",
@@ -4414,7 +4529,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Samurai": {
    "line": "Samurai",
@@ -4432,7 +4548,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Grenadier": {
    "line": "Grenadier",
@@ -4450,7 +4567,8 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Iron Pagoda": {
    "line": "Iron Pagoda",
@@ -4470,7 +4588,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Iron Pagoda": {
    "line": "Iron Pagoda",
@@ -4490,7 +4609,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Mounted Trebuchet": {
    "line": "Mounted Trebuchet",
@@ -4505,7 +4625,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 10
   },
   "Liao Dao": {
    "line": "Liao Dao",
@@ -4523,7 +4644,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Liao Dao": {
    "line": "Liao Dao",
@@ -4541,7 +4663,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Ballista Elephant": {
    "line": "Ballista Elephant",
@@ -4558,7 +4681,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Elite Ballista Elephant": {
    "line": "Ballista Elephant",
@@ -4575,7 +4699,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Turtle Ship": {
    "line": "Turtle Ship",
@@ -4591,7 +4716,8 @@
     "Siege Weapons",
     "Warships",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Elite Turtle Ship": {
    "line": "Turtle Ship",
@@ -4607,7 +4733,8 @@
     "Siege Weapons",
     "Warships",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 7
   },
   "War Wagon": {
    "line": "War Wagon",
@@ -4630,7 +4757,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite War Wagon": {
    "line": "War Wagon",
@@ -4653,7 +4781,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Winged Hussar": {
    "line": "Scout Cavalry",
@@ -4672,7 +4801,8 @@
     "units at close range",
     "melee units",
     "Mounted Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Leitis": {
    "line": "Leitis",
@@ -4691,7 +4821,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Leitis": {
    "line": "Leitis",
@@ -4710,7 +4841,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Magyar Huszar": {
    "line": "Magyar Huszar",
@@ -4729,7 +4861,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Magyar Huszar": {
    "line": "Magyar Huszar",
@@ -4748,7 +4881,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Karambit Warrior": {
    "line": "Karambit Warrior",
@@ -4764,7 +4898,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Karambit Warrior": {
    "line": "Karambit Warrior",
@@ -4780,7 +4915,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Gbeto": {
    "line": "Gbeto",
@@ -4798,7 +4934,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Elite Gbeto": {
    "line": "Gbeto",
@@ -4816,7 +4953,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Bolas Rider": {
    "line": "Bolas Rider",
@@ -4838,7 +4976,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Bolas Rider": {
    "line": "Bolas Rider",
@@ -4860,7 +4999,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Kona": {
    "line": "Kona",
@@ -4881,7 +5021,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Kona": {
    "line": "Kona",
@@ -4902,7 +5043,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Plumed Archer": {
    "line": "Plumed Archer",
@@ -4922,7 +5064,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Plumed Archer": {
    "line": "Plumed Archer",
@@ -4942,7 +5085,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Mangudai": {
    "line": "Mangudai",
@@ -4965,7 +5109,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Mangudai": {
    "line": "Mangudai",
@@ -4988,7 +5133,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Temple Guard": {
    "line": "Temple Guard",
@@ -5005,7 +5151,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Temple Guard": {
    "line": "Temple Guard",
@@ -5022,7 +5169,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Guecha Warrior": {
    "line": "Guecha Warrior",
@@ -5040,7 +5188,8 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 3
   },
   "Elite Guecha Warrior": {
    "line": "Guecha Warrior",
@@ -5058,7 +5207,8 @@
     "Ranged Soldiers",
     "Ranged Soldiers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Savar": {
    "line": "Savar",
@@ -5076,9 +5226,9 @@
     "Cavalry",
     "units at close range",
     "melee units",
-    "Mounted Units",
-    "Unique Units"
-   ]
+    "Mounted Units"
+   ],
+   "attack_range": 0
   },
   "War Elephant": {
    "line": "War Elephant",
@@ -5097,7 +5247,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite War Elephant": {
    "line": "War Elephant",
@@ -5116,7 +5267,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Obuch": {
    "line": "Obuch",
@@ -5135,7 +5287,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Obuch": {
    "line": "Obuch",
@@ -5154,7 +5307,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Caravel": {
    "line": "Caravel",
@@ -5169,7 +5323,8 @@
    "member_of": [
     "Warships",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Elite Caravel": {
    "line": "Caravel",
@@ -5184,7 +5339,8 @@
    "member_of": [
     "Warships",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 7
   },
   "Organ Gun": {
    "line": "Organ Gun",
@@ -5198,7 +5354,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 7
   },
   "Elite Organ Gun": {
    "line": "Organ Gun",
@@ -5212,7 +5369,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 7
   },
   "Legionary": {
    "line": "Legionary",
@@ -5229,9 +5387,9 @@
    "member_of": [
     "Infantry",
     "units at close range",
-    "melee units",
-    "Unique Units"
-   ]
+    "melee units"
+   ],
+   "attack_range": 0
   },
   "Centurion": {
    "line": "Centurion",
@@ -5251,7 +5409,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Centurion": {
    "line": "Centurion",
@@ -5271,7 +5430,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Mameluke": {
    "line": "Mameluke",
@@ -5290,7 +5450,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 3
   },
   "Elite Mameluke": {
    "line": "Mameluke",
@@ -5309,7 +5470,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 3
   },
   "Hearth Troop": {
    "line": "Hearth Troop",
@@ -5326,7 +5488,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Hearth Troop": {
    "line": "Hearth Troop",
@@ -5343,7 +5506,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Hei Guang Cavalry": {
    "line": "Hei Guang Cavalry",
@@ -5362,9 +5526,9 @@
     "Cavalry",
     "units at close range",
     "melee units",
-    "Mounted Units",
-    "Unique Units"
-   ]
+    "Mounted Units"
+   ],
+   "attack_range": 0
   },
   "Heavy Hei Guang Cavalry": {
    "line": "Hei Guang Cavalry",
@@ -5383,9 +5547,9 @@
     "Cavalry",
     "units at close range",
     "melee units",
-    "Mounted Units",
-    "Unique Units"
-   ]
+    "Mounted Units"
+   ],
+   "attack_range": 0
   },
   "War Chariot": {
    "line": "War Chariot",
@@ -5401,7 +5565,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Traction Trebuchet": {
    "line": "Traction Trebuchet",
@@ -5410,9 +5575,9 @@
    "weak_vs": [],
    "strong_vs": [],
    "member_of": [
-    "Siege Weapons",
-    "Unique Units"
-   ]
+    "Siege Weapons"
+   ],
+   "attack_range": 14
   },
   "White Feather Guard": {
    "line": "White Feather Guard",
@@ -5429,7 +5594,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite White Feather Guard": {
    "line": "White Feather Guard",
@@ -5446,7 +5612,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Liu Bei": {
    "line": "Liu Bei",
@@ -5457,8 +5624,10 @@
    "member_of": [
     "Infantry",
     "units at close range",
-    "melee units"
-   ]
+    "melee units",
+    "Unique Units"
+   ],
+   "attack_range": 0
   },
   "Serjeant": {
    "line": "Serjeant",
@@ -5477,7 +5646,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Serjeant": {
    "line": "Serjeant",
@@ -5496,7 +5666,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Boyar": {
    "line": "Boyar",
@@ -5515,7 +5686,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Boyar": {
    "line": "Boyar",
@@ -5534,7 +5706,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Conquistador": {
    "line": "Conquistador",
@@ -5554,7 +5727,8 @@
     "Gunners",
     "Gunpowder Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Elite Conquistador": {
    "line": "Conquistador",
@@ -5574,7 +5748,8 @@
     "Gunners",
     "Gunpowder Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Missionary": {
    "line": "Missionary",
@@ -5589,7 +5764,8 @@
    "member_of": [
     "Monks",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 7
   },
   "Flaming Camel": {
    "line": "Flaming Camel",
@@ -5605,7 +5781,8 @@
    "member_of": [
     "Siege Weapons",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Keshik": {
    "line": "Keshik",
@@ -5625,7 +5802,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Keshik": {
    "line": "Keshik",
@@ -5645,7 +5823,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Teutonic Knight": {
    "line": "Teutonic Knight",
@@ -5663,7 +5842,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Teutonic Knight": {
    "line": "Teutonic Knight",
@@ -5681,7 +5861,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Ibirapema Warrior": {
    "line": "Ibirapema Warrior",
@@ -5698,7 +5879,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Ibirapema Warrior": {
    "line": "Ibirapema Warrior",
@@ -5715,7 +5897,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Blackwood Archer": {
    "line": "Blackwood Archer",
@@ -5732,7 +5915,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Elite Blackwood Archer": {
    "line": "Blackwood Archer",
@@ -5749,7 +5933,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Janissary": {
    "line": "Janissary",
@@ -5768,7 +5953,8 @@
     "Gunners",
     "Gunpowder Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 7
   },
   "Elite Janissary": {
    "line": "Janissary",
@@ -5787,7 +5973,8 @@
     "Gunners",
     "Gunpowder Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 8
   },
   "Jarl": {
    "line": "Jarl",
@@ -5806,7 +5993,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Jarl": {
    "line": "Jarl",
@@ -5825,7 +6013,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Imperial Skirmisher": {
    "line": "Skirmisher",
@@ -5843,7 +6032,8 @@
     "Skirmishers",
     "Ranged Soldiers",
     "Ranged Soldiers at long range"
-   ]
+   ],
+   "attack_range": 5
   },
   "Rattan Archer": {
    "line": "Rattan Archer",
@@ -5865,7 +6055,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Elite Rattan Archer": {
    "line": "Rattan Archer",
@@ -5887,7 +6078,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Berserk": {
    "line": "Berserk",
@@ -5906,7 +6098,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Berserk": {
    "line": "Berserk",
@@ -5925,7 +6118,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Xianbei Raider": {
    "line": "Xianbei Raider",
@@ -5946,7 +6140,8 @@
     "Mounted Archers",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 4
   },
   "Tiger Cavalry": {
    "line": "Tiger Cavalry",
@@ -5964,7 +6159,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Elite Tiger Cavalry": {
    "line": "Tiger Cavalry",
@@ -5982,7 +6178,8 @@
     "melee units",
     "Mounted Units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Cao Cao": {
    "line": "Cao Cao",
@@ -5990,7 +6187,10 @@
    "unique": false,
    "weak_vs": [],
    "strong_vs": [],
-   "member_of": []
+   "member_of": [
+    "Unique Units"
+   ],
+   "attack_range": 0
   },
   "Jian Swordsman": {
    "line": "Jian Swordsman",
@@ -6007,7 +6207,8 @@
     "units at close range",
     "melee units",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 0
   },
   "Fire Archer": {
    "line": "Fire Archer",
@@ -6028,7 +6229,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 5
   },
   "Elite Fire Archer": {
    "line": "Fire Archer",
@@ -6049,7 +6251,8 @@
     "Foot Archers",
     "Foot Archers at long range",
     "Unique Units"
-   ]
+   ],
+   "attack_range": 6
   },
   "Sun Jian": {
    "line": "Sun Jian",
@@ -6057,7 +6260,10 @@
    "unique": false,
    "weak_vs": [],
    "strong_vs": [],
-   "member_of": []
+   "member_of": [
+    "Unique Units"
+   ],
+   "attack_range": 0
   }
  }
 }
